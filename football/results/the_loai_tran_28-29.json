@@ -1,0 +1,345 @@
+[
+{
+"tab": "PL",
+"row": 150,
+"hn": "Nottingham",
+"an": "Chelsea",
+"eh": 1796,
+"ea": 1873,
+"gap": 12,
+"cls": "CÂN BẰNG",
+"elig": true,
+"why": [
+"cân bằng",
+"Ngoại hạng Anh"
+]
+},
+{
+"tab": "PL",
+"row": 155,
+"hn": "Leeds",
+"an": "Coventry",
+"eh": 1825,
+"ea": 1709,
+"gap": 181,
+"cls": "CHÊNH VỪA",
+"elig": true,
+"why": [
+"Ngoại hạng Anh"
+]
+},
+{
+"tab": "PL",
+"row": 160,
+"hn": "MU",
+"an": "Brentford",
+"eh": 1845,
+"ea": 1856,
+"gap": 54,
+"cls": "CÂN BẰNG",
+"elig": true,
+"why": [
+"cân bằng",
+"trận lớn (2 đội ≥ 1800)",
+"Ngoại hạng Anh"
+]
+},
+{
+"tab": "LL",
+"row": 150,
+"hn": "Levante",
+"an": "Santander",
+"eh": 1709,
+"ea": 1692,
+"gap": 82,
+"cls": "CÂN BẰNG",
+"elig": true,
+"why": [
+"cân bằng"
+]
+},
+{
+"tab": "LL",
+"row": 155,
+"hn": "Betis",
+"an": "Rayo",
+"eh": 1832,
+"ea": 1730,
+"gap": 167,
+"cls": "CHÊNH VỪA",
+"elig": false,
+"why": []
+},
+{
+"tab": "LL",
+"row": 160,
+"hn": "Málaga",
+"an": "Athletic",
+"eh": 1649,
+"ea": 1761,
+"gap": 47,
+"cls": "CÂN BẰNG",
+"elig": true,
+"why": [
+"cân bằng"
+]
+},
+{
+"tab": "BL",
+"row": 150,
+"hn": "Bremen",
+"an": "Gladbach",
+"eh": 1718,
+"ea": 1665,
+"gap": 118,
+"cls": "CHÊNH VỪA",
+"elig": false,
+"why": []
+},
+{
+"tab": "BL",
+"row": 155,
+"hn": "Paderborn",
+"an": "Schalke",
+"eh": 1666,
+"ea": 1626,
+"gap": 105,
+"cls": "CHÊNH VỪA",
+"elig": false,
+"why": []
+},
+{
+"tab": "BL",
+"row": 160,
+"hn": "Köln",
+"an": "Elversberg",
+"eh": 1672,
+"ea": 1662,
+"gap": 75,
+"cls": "CÂN BẰNG",
+"elig": true,
+"why": [
+"cân bằng"
+]
+},
+{
+"tab": "BL",
+"row": 165,
+"hn": "HSV",
+"an": "Bayern",
+"eh": 1673,
+"ea": 2041,
+"gap": 303,
+"cls": "QUÁ LỆCH",
+"elig": false,
+"why": []
+},
+{
+"tab": "BL",
+"row": 170,
+"hn": "Mainz",
+"an": "Union",
+"eh": 1704,
+"ea": 1662,
+"gap": 107,
+"cls": "CHÊNH VỪA",
+"elig": false,
+"why": []
+},
+{
+"tab": "PL",
+"row": 165,
+"hn": "Ipswich",
+"an": "Villa",
+"eh": 1696,
+"ea": 1890,
+"gap": 129,
+"cls": "CHÊNH VỪA",
+"elig": true,
+"why": [
+"Ngoại hạng Anh"
+]
+},
+{
+"tab": "PL",
+"row": 170,
+"hn": "Everton",
+"an": "Liverpool",
+"eh": 1822,
+"ea": 1942,
+"gap": 55,
+"cls": "CÂN BẰNG",
+"elig": true,
+"why": [
+"cân bằng",
+"trận lớn (2 đội ≥ 1800)",
+"derby Merseyside",
+"Ngoại hạng Anh"
+]
+},
+{
+"tab": "PL",
+"row": 175,
+"hn": "Brighton",
+"an": "Newcastle",
+"eh": 1895,
+"ea": 1855,
+"gap": 105,
+"cls": "CHÊNH VỪA",
+"elig": true,
+"why": [
+"trận lớn (2 đội ≥ 1800)",
+"Ngoại hạng Anh"
+]
+},
+{
+"tab": "PL",
+"row": 180,
+"hn": "Palace",
+"an": "Hull",
+"eh": 1796,
+"ea": 1657,
+"gap": 204,
+"cls": "QUÁ LỆCH",
+"elig": false,
+"why": []
+},
+{
+"tab": "PL",
+"row": 185,
+"hn": "Fulham",
+"an": "Bournemouth",
+"eh": 1804,
+"ea": 1895,
+"gap": 26,
+"cls": "CÂN BẰNG",
+"elig": true,
+"why": [
+"cân bằng",
+"trận lớn (2 đội ≥ 1800)",
+"Ngoại hạng Anh"
+]
+},
+{
+"tab": "PL",
+"row": 190,
+"hn": "Sunderland",
+"an": "Tottenham",
+"eh": 1732,
+"ea": 1818,
+"gap": 21,
+"cls": "CÂN BẰNG",
+"elig": true,
+"why": [
+"cân bằng",
+"Ngoại hạng Anh"
+]
+},
+{
+"tab": "PL",
+"row": 195,
+"hn": "Arsenal",
+"an": "Man City",
+"eh": 2040,
+"ea": 1994,
+"gap": 111,
+"cls": "CHÊNH VỪA",
+"elig": true,
+"why": [
+"trận lớn (2 đội ≥ 1800)",
+"đại chiến đua vô địch",
+"Ngoại hạng Anh"
+]
+},
+{
+"tab": "LL",
+"row": 165,
+"hn": "Elche",
+"an": "Atlético",
+"eh": 1707,
+"ea": 1916,
+"gap": 144,
+"cls": "CHÊNH VỪA",
+"elig": false,
+"why": []
+},
+{
+"tab": "LL",
+"row": 170,
+"hn": "Real Madrid",
+"an": "Alavés",
+"eh": 2007,
+"ea": 1716,
+"gap": 356,
+"cls": "QUÁ LỆCH",
+"elig": false,
+"why": []
+},
+{
+"tab": "LL",
+"row": 175,
+"hn": "Valencia",
+"an": "Osasuna",
+"eh": 1744,
+"ea": 1710,
+"gap": 99,
+"cls": "CÂN BẰNG",
+"elig": true,
+"why": [
+"cân bằng"
+]
+},
+{
+"tab": "LL",
+"row": 180,
+"hn": "Deportivo",
+"an": "Barcelona",
+"eh": 1685,
+"ea": 2035,
+"gap": 285,
+"cls": "QUÁ LỆCH",
+"elig": false,
+"why": []
+},
+{
+"tab": "BL",
+"row": 175,
+"hn": "Stuttgart",
+"an": "Frankfurt",
+"eh": 1820,
+"ea": 1744,
+"gap": 141,
+"cls": "CHÊNH VỪA",
+"elig": false,
+"why": []
+},
+{
+"tab": "BL",
+"row": 180,
+"hn": "Freiburg",
+"an": "RB Leipzig",
+"eh": 1800,
+"ea": 1846,
+"gap": 19,
+"cls": "CÂN BẰNG",
+"elig": true,
+"why": [
+"cân bằng",
+"trận lớn (2 đội ≥ 1800)"
+]
+},
+{
+"tab": "BL",
+"row": 185,
+"hn": "Hoffenheim",
+"an": "Augsburg",
+"eh": 1733,
+"ea": 1714,
+"gap": 84,
+"cls": "CÂN BẰNG",
+"elig": true,
+"why": [
+"cân bằng"
+]
+}
+]
