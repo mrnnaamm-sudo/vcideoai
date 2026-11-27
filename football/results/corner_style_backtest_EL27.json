@@ -1,0 +1,336 @@
+[
+{
+"m": "Beşiktaş-Hapoel Beer Sheva",
+"k": "cor",
+"cua": "Xỉu 9,5 góc FT",
+"line": 9.5,
+"E": 7.64281263682594,
+"act": 15,
+"fl": []
+},
+{
+"m": "Beşiktaş-Hapoel Beer Sheva",
+"k": "h1",
+"cua": "Xỉu 4,5 góc H1",
+"line": 4.5,
+"E": 3.745237908928551,
+"act": 9,
+"fl": []
+},
+{
+"m": "Celta Vigo-AFC Bournemouth",
+"k": "cor",
+"cua": "Xỉu 9,5 góc FT",
+"line": 9.5,
+"E": 8.459434726305926,
+"act": 11,
+"fl": []
+},
+{
+"m": "Celta Vigo-AFC Bournemouth",
+"k": "h1",
+"cua": "Xỉu 4,5 góc H1",
+"line": 4.5,
+"E": 3.4566066202406343,
+"act": 4,
+"fl": []
+},
+{
+"m": "Dinamo Zagreb-Bayer Leverkusen",
+"k": "cor",
+"cua": "Xỉu 9,5 góc FT",
+"line": 9.5,
+"E": 8.796261687414688,
+"act": 12,
+"fl": []
+},
+{
+"m": "Dinamo Zagreb-Bayer Leverkusen",
+"k": "h1",
+"cua": "Xỉu 4,5 góc H1",
+"line": 4.5,
+"E": 4.3399726917878025,
+"act": 10,
+"fl": []
+},
+{
+"m": "Marseille-Levski Sofia",
+"k": "cor",
+"cua": "Xỉu 9 góc FT",
+"line": 9,
+"E": 7.755203705440579,
+"act": 5,
+"fl": [
+"Marseille chuyển đổi tạt→góc cao (0.35)",
+"HAI ĐỘI ÍT TẠT → bất lợi Tài góc"
+]
+},
+{
+"m": "Marseille-Levski Sofia",
+"k": "h1",
+"cua": "Xỉu 4,5 góc H1",
+"line": 4.5,
+"E": 3.201771557455214,
+"act": 4,
+"fl": [
+"Marseille chuyển đổi tạt→góc cao (0.35)",
+"HAI ĐỘI ÍT TẠT → bất lợi Tài góc"
+]
+},
+{
+"m": "Olympiacos-Milan",
+"k": "cor",
+"cua": "Xỉu 9 góc FT",
+"line": 9,
+"E": 8.842026569821993,
+"act": 7,
+"fl": []
+},
+{
+"m": "Olympiacos-Milan",
+"k": "h1",
+"cua": "Tài 4,5 góc H1",
+"line": 4.5,
+"E": 4.04876735945644,
+"act": 3,
+"fl": []
+},
+{
+"m": "Union St.Gilloise-Lech Poznań",
+"k": "cor",
+"cua": "Xỉu 9,5 góc FT",
+"line": 9.5,
+"E": 9.772075184759307,
+"act": 9,
+"fl": [
+"Lech Poznań chuyển đổi tạt→góc cao (0.38)"
+]
+},
+{
+"m": "Union St.Gilloise-Lech Poznań",
+"k": "h1",
+"cua": "Xỉu 4,5 góc H1",
+"line": 4.5,
+"E": 4.15640572245424,
+"act": 3,
+"fl": [
+"Lech Poznań chuyển đổi tạt→góc cao (0.38)"
+]
+},
+{
+"m": "Viktoria Plzeň-Benfica",
+"k": "cor",
+"cua": "Tài 9,5 góc FT",
+"line": 9.5,
+"E": 10.495245869925599,
+"act": 14,
+"fl": [
+"Benfica chuyển đổi tạt→góc cao (0.39)"
+]
+},
+{
+"m": "Viktoria Plzeň-Benfica",
+"k": "h1",
+"cua": "Tài 4,5 góc H1",
+"line": 4.5,
+"E": 4.8539257105726765,
+"act": 7,
+"fl": [
+"Benfica chuyển đổi tạt→góc cao (0.39)"
+]
+},
+{
+"m": "Crystal Palace-Real Sociedad",
+"k": "cor",
+"cua": "Tài 9,5 góc FT",
+"line": 9.5,
+"E": 10.995907426010762,
+"act": 9,
+"fl": [
+"Real Sociedad chuyển đổi tạt→góc cao (0.40)"
+]
+},
+{
+"m": "Crystal Palace-Real Sociedad",
+"k": "h1",
+"cua": "Tài 4,5 góc H1",
+"line": 4.5,
+"E": 4.9546211033543335,
+"act": 2,
+"fl": [
+"Real Sociedad chuyển đổi tạt→góc cao (0.40)"
+]
+},
+{
+"m": "Hoffenheim-Sturm Graz",
+"k": "cor",
+"cua": "Xỉu 10,5 góc FT",
+"line": 10.5,
+"E": 11.08636527271704,
+"act": 14,
+"fl": [
+"Hoffenheim chuyển đổi tạt→góc cao (0.36)"
+]
+},
+{
+"m": "Hoffenheim-Sturm Graz",
+"k": "h1",
+"cua": "Xỉu 4,5 góc H1",
+"line": 4.5,
+"E": 4.541339801244096,
+"act": 8,
+"fl": [
+"Hoffenheim chuyển đổi tạt→góc cao (0.36)"
+]
+},
+{
+"m": "Juventus-Omonia Nicosia",
+"k": "cor",
+"cua": "Xỉu 9,5 góc FT",
+"line": 9.5,
+"E": 9.69098034903697,
+"act": 8,
+"fl": []
+},
+{
+"m": "Juventus-Omonia Nicosia",
+"k": "h1",
+"cua": "Xỉu 4,5 góc H1",
+"line": 4.5,
+"E": 3.7035359754014223,
+"act": 6,
+"fl": []
+},
+{
+"m": "Lyon-Lillestrøm",
+"k": "cor",
+"cua": "Tài 10,5 góc FT",
+"line": 10.5,
+"E": 10.331662980708755,
+"act": 15,
+"fl": [
+"Lillestrøm chuyển đổi tạt→góc cao (0.33)",
+"HAI ĐỘI ÍT TẠT → bất lợi Tài góc"
+]
+},
+{
+"m": "Lyon-Lillestrøm",
+"k": "h1",
+"cua": "Tài 4,5 góc H1",
+"line": 4.5,
+"E": 5.531167477297941,
+"act": 7,
+"fl": [
+"Lillestrøm chuyển đổi tạt→góc cao (0.33)",
+"HAI ĐỘI ÍT TẠT → bất lợi Tài góc"
+]
+},
+{
+"m": "NEC Nijmegen-Rennes",
+"k": "cor",
+"cua": "Tài 10 góc FT",
+"line": 10,
+"E": 9.943591323240556,
+"act": 6,
+"fl": [
+"Rennes chuyển đổi tạt→góc cao (0.35)"
+]
+},
+{
+"m": "NEC Nijmegen-Rennes",
+"k": "h1",
+"cua": "Tài 4,5 góc H1",
+"line": 4.5,
+"E": 4.712961236681558,
+"act": 2,
+"fl": [
+"Rennes chuyển đổi tạt→góc cao (0.35)"
+]
+},
+{
+"m": "OFI Crete-Anderlecht",
+"k": "cor",
+"cua": "Xỉu 9,5 góc FT",
+"line": 9.5,
+"E": 10.961704376879975,
+"act": 10,
+"fl": [
+"OFI Crete chuyển đổi tạt→góc cao (0.35)",
+"Anderlecht dự kiến cầm bóng 59% + đá cánh/tạt, đối thủ để chạm vòng cấm 42/trận → DỒN ÉP TẠO GÓC (bất lợi Xỉu góc, bài học EL 27/11)"
+]
+},
+{
+"m": "OFI Crete-Anderlecht",
+"k": "h1",
+"cua": "Tài 4,5 góc H1",
+"line": 4.5,
+"E": 4.951410114960923,
+"act": 5,
+"fl": [
+"OFI Crete chuyển đổi tạt→góc cao (0.35)",
+"Anderlecht dự kiến cầm bóng 59% + đá cánh/tạt, đối thủ để chạm vòng cấm 42/trận → DỒN ÉP TẠO GÓC (bất lợi Xỉu góc, bài học EL 27/11)"
+]
+},
+{
+"m": "Sparta Prague-AZ Alkmaar",
+"k": "cor",
+"cua": "Xỉu 10 góc FT",
+"line": 10,
+"E": 9.792924117231049,
+"act": 2,
+"fl": []
+},
+{
+"m": "Sparta Prague-AZ Alkmaar",
+"k": "h1",
+"cua": "Xỉu 4,5 góc H1",
+"line": 4.5,
+"E": 4.095512752289314,
+"act": 0,
+"fl": []
+},
+{
+"m": "Sunderland-Jagiellonia Białystok",
+"k": "cor",
+"cua": "Xỉu 9,5 góc FT",
+"line": 9.5,
+"E": 9.215006904511771,
+"act": 11,
+"fl": []
+},
+{
+"m": "Sunderland-Jagiellonia Białystok",
+"k": "h1",
+"cua": "Tài 4,5 góc H1",
+"line": 4.5,
+"E": 4.327489681505375,
+"act": 6,
+"fl": []
+},
+{
+"m": "Torreense-Celtic",
+"k": "cor",
+"cua": "Tài 10 góc FT",
+"line": 10,
+"E": 10.820480382242295,
+"act": 10,
+"fl": [
+"Celtic dự kiến cầm bóng 59% + đá cánh/tạt, đối thủ để chạm vòng cấm 38/trận → DỒN ÉP TẠO GÓC (bất lợi Xỉu góc, bài học EL 27/11)",
+"Celtic tạt 23/trận gặp đối thủ cho tạt 24/trận, dự kiến 7.8 góc → NHIỀU GÓC CHO Celtic (bất lợi Xỉu góc)",
+"Celtic chuyển đổi tạt→góc cao (0.35)"
+]
+},
+{
+"m": "Torreense-Celtic",
+"k": "h1",
+"cua": "Tài 4,5 góc H1",
+"line": 4.5,
+"E": 4.670685178357565,
+"act": 5,
+"fl": [
+"Celtic dự kiến cầm bóng 59% + đá cánh/tạt, đối thủ để chạm vòng cấm 38/trận → DỒN ÉP TẠO GÓC (bất lợi Xỉu góc, bài học EL 27/11)",
+"Celtic tạt 23/trận gặp đối thủ cho tạt 24/trận, dự kiến 7.8 góc → NHIỀU GÓC CHO Celtic (bất lợi Xỉu góc)",
+"Celtic chuyển đổi tạt→góc cao (0.35)"
+]
+}
+]
