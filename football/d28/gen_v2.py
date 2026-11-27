@@ -7,7 +7,6 @@ MK=['hc','tot','cor','h1','card']
 FORCE_C={('PL',155):'Coventry vắng 7 người (gồm 2 tiền đạo Wright, Awoniyi) và mẫu có trận thua −5 → không theo cửa Coventry (mục 7, 14)',
  ('PL',154):'trọng tài Andy Madley NHẸ TAY (3,45 vàng/trận, TB giải 3,87) phản bác Tài (mục 5)',
  ('PL',164):'mẫu 50% < 70%, trọng tài Robert Jones trung bình; Tài thẻ giá cao 2,30 (bài học mục 14)',
- ('BL',151):'Gladbach vắng Kleindienst, Bremen vắng Grüll + 4 người (bài học Gala–Villa)',
  ('BL',169):'mẫu 60% < 70% (mục 5); trọng tài Dankert nhẹ tay, trận chênh lệch (Elo 1673–2041, hệ số 0,92) cùng chiều Xỉu → chỉ ghi lưu ý',
  ('BL',174):'trọng tài Timo Gerach lệch < 0,5 vàng/trận, 4 thẻ đỏ/13 trận phản bác Xỉu (mục 5)',
  ('BL',164):'trọng tài Sören Storks CHẶT TAY phản bác Xỉu (mục 5)'}
