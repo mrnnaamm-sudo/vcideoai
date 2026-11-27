@@ -141,9 +141,13 @@ def grade(b):
             t='C+'; step('14(8)',f"đội chọn {pb}đ/{gb} bàn 5 trận, đối thủ {po}đ → tối đa C+",t)
             notes.append(f"Mục 14(8): đội được chọn chỉ {pb} điểm, ghi {gb} bàn trong 5 trận gần nhất (đối thủ {po} điểm) → tối đa C+, bỏ Ưu tiên/TOP")
         else: step('14(8)',f"đội chọn {pb}đ/{gb} bàn, đối thủ {po}đ – đạt")
-    # mục 14(8b): xu hướng 5 trận gần nhất của chính kèo
-    if mk in RR_CHUNG:
-        w,l=trend5(mk,x,s,H,A)
+    # mục 14(8b): xu hướng 5 trận gần nhất của chính kèo – áp cho MỌI kèo trừ thẻ (kể cả kèo mới, mục 0h)
+    if mk!='card':
+        if mk in RR_CHUNG: w,l=trend5(mk,x,s,H,A)
+        elif b.get('trend_fn'):            # kèo mới: bộ nạp dữ liệu phải cung cấp hàm kết quả từng trận (dương = cửa chọn thắng)
+            vv=[z for z in (b['trend_fn'](q,True) for q in H[:5])]+[z for z in (b['trend_fn'](q,False) for q in A[:5])]
+            vv=[z for z in vv if z is not None]; w,l=sum(z>0 for z in vv),sum(z<0 for z in vv)
+        else: raise ValueError(f"mục 0(h): kèo mới '{mk}' thiếu hàm xu hướng cho mục 14(8b) – chưa được chấm")
         if w+l and w/(w+l)<=0.40 and t in('A','B'):
             t=DOWN[t]; step('14(8b)',f"5 trận gần nhất {w}/{w+l}",t)
             notes.append(f"Mục 14(8b): 5 trận gần nhất của hai đội chỉ đạt {w}/{w+l} ({w/(w+l):.0%}) ở kèo này → hạ 1 bậc")

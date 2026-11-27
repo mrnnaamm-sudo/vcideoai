@@ -173,7 +173,10 @@ for r in J['RES']:
             move=moved(P1,P2,mk,s['side']) if mk in('hc','tot') else None,elo=tuple(r['elo']),sched=(sh,sa),lineup=(LH,LA),card=None,
             time=r['time'],lab=f"{r['hn']} (Nhà) – {r['an']} (Khách)",hn=SH[r['hn']],an=SH[r['an']],tinh_chat=dict(TC.get(mid,{}),derby=TC.get(mid,{}).get('derby') or is_derby(r['hn'],r['an']))))
 # ================= CHẤM =================
+from rules import registry as REGI
 for b in BETS:
+    if not REGI.official(b['mk']):      # mục 0(h): kèo mới chưa tích hợp đủ → chỉ lưu giá, không chấm/xếp/báo
+        b.update(t='—',steps=[('0(h)','chờ tích hợp',None)],notes=[]); MATCH[b['mid']].append(b); continue
     g=grade(b); b.update(g); MATCH[b['mid']].append(b)
 rank(MATCH,SLOT)
 out=[]
@@ -244,7 +247,10 @@ for mid,bs in MATCH.items():
         if b.get('nodata') is not None: pre.append(notes.pop(0))
         if b.get('abn'): pre.append(next((n for n in notes if n.startswith('⚠')),'⚠ KÈO BẤT THƯỜNG')); notes=[n for n in notes if not n.startswith('⚠')]
         if b['mk']=='hc' and not hasB: pre.append('Trận không có tier B, chỉ có C+ ½R' if hasCp else 'KHÔNG VÀO (trận không có kèo tier B)')
-        if b['mk']=='card':
+        if t=='—':
+            core=f"CHỜ TÍCH HỢP (mục 0h) • {c}"+(f" @{f2(s['odds'])}" if s['odds'] else '')+" • loại kèo mới chưa tích hợp đủ A1 + bộ máy + bảng đối chiếu + khuôn sheet → chưa chấm, không Ưu tiên/TOP, không báo, không tính RR"
+            pre=[]
+        elif b['mk']=='card':
             if b.get('card_pri'): pre.append('Thẻ ưu tiên (mục 29, RR riêng)')
             core=f"{base} • kèo thẻ RR riêng (mục 29) • tier {t}"+('' if t in('A','B') else (' • ½R' if t=='C+' else ' • không vào'))
         elif t in('A','B'):

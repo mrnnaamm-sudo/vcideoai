@@ -2,6 +2,10 @@
 loai: 'cham' = bộ máy chấm (engine.grade ghi bước kiểm có mã 'buoc'), 'mo_hinh' = model.py, 'du_lieu' = khâu nạp dữ liệu (run_day + kiểm đầu vào),
 'xep' = engine.rank, 'trinh_bay' = khuôn ghi sheet (run_day), 'quy_trinh' = việc theo lịch (chốt kèo / chấm kết quả / tổng kết).
 thi_truong: những thị trường bắt buộc phải có bước kiểm này trong dòng 'Đã kiểm quy chuẩn'."""
+# Mục 0(h): DANH SÁCH THỊ TRƯỜNG. 'chinh_thuc' = đã tích hợp đủ 4 nơi, được chấm/xếp/báo; 'cho_tich_hop' = kèo mới đang thêm: chỉ lưu giá, KHÔNG chấm, KHÔNG Ưu tiên/TOP, KHÔNG tính RR.
+MARKETS={'hc':('Chấp bàn FT','chinh_thuc'),'tot':('Tài/Xỉu bàn FT','chinh_thuc'),'cor':('Góc FT','chinh_thuc'),'h1':('Góc H1','chinh_thuc'),
+         'card':('Thẻ FT','chinh_thuc'),'chc':('Chấp góc FT','chinh_thuc')}
+def official(mk): return MARKETS.get(mk,(None,'cho_tich_hop'))[1]=='chinh_thuc'
 ALL=('hc','tot','cor','h1','chc','card')
 RR=('hc','tot','cor','h1','chc')
 REG={
@@ -37,7 +41,15 @@ REG={
  29:dict(loai='cham',buoc='29',thi_truong=('card',)),
  30:dict(loai='cham',buoc='30(c)',thi_truong=('chc',)),
 }
+# Mục 0(h): PHẦN CHUNG mọi loại kèo (kể cả kèo mới) bắt buộc dùng: mẫu 10 trận (mục 1, khâu dữ liệu), giá (6), công thức tier (8),
+# đủ số liệu (15), bất thường (16), xu hướng 5 trận (14(8b)), lịch (23), đội hình (27) và xếp Ưu tiên/TOP (9).
+COMMON=('6','8','15','16','14(8b)','23','27')
+EXTRA={}   # kèo mới: {'mã': ('mục riêng', ...)} – mục riêng của loại kèo mới (nếu có)
 def need(mk):
+    if mk not in ALL and mk!='card':                      # loại kèo mới: phần chung + mục riêng
+        return list(dict.fromkeys(list(COMMON)+list(EXTRA.get(mk,()))))
+    return _need_old(mk)
+def _need_old(mk):
     """Các bước kiểm bắt buộc phải xuất hiện cho thị trường mk (lấy thẳng từ bảng đối chiếu)."""
     out=[]
     for m,r in REG.items():
