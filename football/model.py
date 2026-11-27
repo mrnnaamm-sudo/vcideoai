@@ -174,3 +174,28 @@ def tier(sd,mk,n_ok=True,ref_ok=None,card_dev=None,refdev=None):
     if ev>=0.05 and evm>0 and same and ea>=0: return 'B'
     if ev>=0.02 and ea>=0.03 and o>=1.65 and evm>0 and n_ok and same: return 'C+'
     return 'C'
+
+# ---------- mục 30: chấp góc FT ----------
+def chc_eval(H,A,line,o1,o2,kv):
+    """Chấp góc FT: góc mỗi đội ~ NB độc lập (phương sai 1,3×TB); mẫu = hiệu số góc 10 trận mỗi đội."""
+    mh=(vblend(H,'cf',True)+vblend(A,'ca',False))/2; ma=(vblend(A,'cf',False)+vblend(H,'ca',True))/2
+    kv['ch']=mh; kv['ca_']=ma
+    ph=nb_pmf(mh,mh*1.3); pa=nb_pmf(ma,ma*1.3)
+    dh={}
+    for i,p in enumerate(ph):
+        for j,q in enumerate(pa): dh[i-j]=dh.get(i-j,0)+p*q
+    da={-k:v for k,v in dh.items()}
+    if line is None:
+        line=-round((mh-ma)*2)/2-0.5 if mh>=ma else round((ma-mh)*2)/2+0.5
+    sh=[settle(r['cf']-r['ca']+line) for r in H if r['cf'] is not None]+[settle(-(r['cf']-r['ca'])+line) for r in A if r['cf'] is not None]
+    sa=[-x for x in sh]; ps1,n=rate(sh); ps2,_=rate(sa)
+    sides=[]
+    for s,(o,oo,ps,d,l) in enumerate(((o1,o2,ps1,dh,line),(o2,o1,ps2,da,-line))):
+        pw=ev_margin(d,l,2.0)/2+0.5
+        pf=(1/o)/(1/o+1/oo) if (o and oo) else None
+        if o:
+            evm=ev_margin(d,l,o); pm=(evm+1)/o; psa=(ps+pf)/2 if pf else ps
+            pe=0.4*pm+0.3*psa+0.3*pf if pf else 0.55*pm+0.45*psa; ev=pe*o-1
+        else: evm=None; ev=None; pe=0.55*pw+0.45*ps; psa=ps
+        sides.append(dict(side=s,odds=o,ps=ps,psa=psa,pm=pw,pf=pf,pe=pe,ev=ev,evm=evm,edge=(ps-1/o) if o else None,gap=(pe-pf) if (o and pf) else None,n=n))
+    return dict(line=line,sides=sides)

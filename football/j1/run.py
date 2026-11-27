@@ -1,7 +1,7 @@
 """J1 League – phân tích theo quy chuẩn chung (mục 1–29). python3 j1/run.py <ngày dd/mm> (chạy từ thư mục football/)"""
 import json,sys,glob,os,datetime as dt,math
 sys.path.insert(0,'.')
-from model import evaluate,tier,tier_old
+from model import evaluate,tier,tier_old,vblend,nb_pmf,ev_margin,settle,rate,chc_eval
 from gen3 import best,line_text,f2,pc,sg,lg
 from corner_style import stats_of,_num,match_row,profile_venue,matchup,flags,summary,verdict_flags
 import lineup as LU
@@ -72,6 +72,7 @@ def odds_for(hn,an):
     return {},None
 UO={}
 if os.path.exists('j1/odds_user.json'): UO=json.load(open('j1/odds_user.json')).get(DAY,{})
+
 def half(x): return math.floor(x)+0.5
 RES=[];FORM=[];CS={}
 for k,m in enumerate(FX):
@@ -82,10 +83,12 @@ for k,m in enumerate(FX):
     # mốc góc/H1/thẻ: theo kỳ vọng (chờ giá người dùng)
     kv0,_=evaluate(H,A,{},None,(ELO[h],ELO[a]),(None,None),(xgsum(H),xgsum(A)),1.0)
     o={'hc':od.get('hc',(None,None,None)),'tot':od.get('tot',(None,None,None)),'cor':(half(kv0['cor']),None,None),'h1':(half(kv0['h1']),None,None),'card':(half(kv0['card']),None,None)}
-    for kk,v in UO.get(str(row),{}).items():
-        if v: o[kk]=tuple(v)
+    U=UO.get(str(m['id']),{})
+    for kk,v in U.items():
+        if v and kk!='chc': o[kk]=tuple(v)
     gap=abs(ELO[h]+65-ELO[a]); char=0.92 if gap>=250 else 1.0
     kv,ev=evaluate(H,A,o,None,(ELO[h],ELO[a]),(None,None),(xgsum(H),xgsum(A)),char)
+    ev['chc']=chc_eval(H,A,*(U.get('chc') or [None,None,None]),kv)
     # mục 28
     files=lambda R:[f"{FM}/m_{r['mid']}.json" for r in R]
     RH=[x for x in (match_row(p,h) for p in files(H)) if x]; RA=[x for x in (match_row(p,a) for p in files(A)) if x]
