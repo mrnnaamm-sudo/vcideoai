@@ -132,14 +132,16 @@ def evaluate(H,A,od,ref=None,elo=(None,None),coef=(None,None),xg=(None,None),cha
             pf=None
             if o and oo: pf=(1/o)/(1/o+1/oo)
             if o:
-                pe=0.4*pm+0.3*ps+0.3*pf if pf else 0.55*pm+0.45*ps
+                # (a) co mẫu về phía thị trường: mẫu dùng = (mẫu + xác suất công bằng)/2
+                psa=(ps+pf)/2 if pf else ps
+                pe=0.4*pm+0.3*psa+0.3*pf if pf else 0.55*pm+0.45*psa
                 ev=pe*o-1; evm=pm*o-1
             else:
                 pe=0.55*pw+0.45*ps; ev=None; evm=None
-            sides.append(dict(side=s,odds=o,ps=ps,pm=pw,pf=pf,pe=pe,ev=ev,evm=evm,edge=(ps-1/o) if o else None,n=n))
+            sides.append(dict(side=s,odds=o,ps=ps,psa=((ps+pf)/2 if (o and pf) else ps),pm=pw,pf=pf,pe=pe,ev=ev,evm=evm,edge=(ps-1/o) if o else None,gap=(pe-pf) if (o and pf) else None,n=n))
         out[mk]=dict(line=line,sides=sides)
     return kv,out
-def tier(sd,mk,n_ok=True,ref_ok=None,card_dev=None,refdev=None):
+def tier_old(sd,mk,n_ok=True,ref_ok=None,card_dev=None,refdev=None):
     """new mục 8 (+EV) and mục 18b"""
     o=sd['odds']; ps=sd['ps']
     if o is None:
@@ -153,4 +155,22 @@ def tier(sd,mk,n_ok=True,ref_ok=None,card_dev=None,refdev=None):
     if e>=0.25 and ev>=0.12 and evm>0: return 'A'
     if e>=0.09 and ps>=0.55 and ev>=0.05 and evm>0: return 'B'
     if e>=0.05 and ev>=0.02 and o>=1.65 and evm>0 and n_ok: return 'C+'
+    return 'C'
+
+def tier(sd,mk,n_ok=True,ref_ok=None,card_dev=None,refdev=None):
+    """Mục 8 bản thử 27/11 (a)+(b): mẫu co về thị trường; A theo EV + mô hình + độ lệch thị trường"""
+    o=sd['odds']; ps=sd['ps']
+    if o is None:
+        if ps>=0.65 and sd['pm']>=0.58: return 'B?'
+        return 'C'
+    ev=sd['ev']; evm=sd['evm']; pf=sd['pf']; gap=sd['gap']
+    ea=sd['psa']-1/o
+    if mk=='card':
+        if ps>=0.70 and refdev is not None and refdev>=0.5 and card_dev is not None and card_dev>=0.6 and ev>=0.05 and evm>0: return 'B'
+        if ea>=0.03 and ev>=0.02 and o>=1.65 and evm>0 and ref_ok and n_ok: return 'C+'
+        return 'C'
+    same=(pf is None) or ps>pf
+    if ev>=0.10 and evm>=0.10 and gap is not None and gap<=0.12 and same and ea>=0: return 'A'
+    if ev>=0.05 and evm>0 and same and ea>=0: return 'B'
+    if ev>=0.02 and ea>=0.03 and o>=1.65 and evm>0 and n_ok and same: return 'C+'
     return 'C'
