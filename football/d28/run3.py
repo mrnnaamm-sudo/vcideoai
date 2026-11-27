@@ -28,6 +28,10 @@ for (tab,row,time,lab,h,a,hn,an,hc,tt,cr,cd,ref,fid),o in zip(M,OUT):
     for x in o['res']:
         L=x['line']; od[x['k']]=(L[0],L[2],L[4])
     od.update({('PL',155):{'card':(3.5,1.93,1.84)},('PL',160):{'card':(4.5,2.3,1.68)}}.get((tab,row),{}))
+    UO=json.load(open('d28/odds_user_27-11.json')).get(tab,{}).get(str(row))
+    if UO:
+        for k,v in zip(('cor','h1','card'),UO):
+            if v: od[k]=tuple(v)
     r=ref or REFBL.get((tab,row))
     rr=dict(name=r[0],ryc=r[1],ravg=r[2],rm=r[3]) if r else None
     gap=abs(eh[1]-ea[1]); char=0.92 if gap>=250 else 1.0
