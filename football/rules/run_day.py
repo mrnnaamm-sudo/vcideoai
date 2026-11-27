@@ -37,13 +37,16 @@ def moved(o1,o2,mk,side):
     up=(l1==l2) and p2>=p1*1.05
     return dict(back=back or up,txt=f"Pinnacle 20:40 → 22:45: mốc {l1:g} → {l2:g}, giá cửa chọn {p1} → {p2}")
 # ---------- mục 23: lịch thi đấu ----------
+TC=json.load(open(f'rules/tinh_chat_{DAYK}.json')) if os.path.exists(f'rules/tinh_chat_{DAYK}.json') else {}
+DERBY=json.load(open('rules/derby.json'))
+def is_derby(a,b): return any((toks(a)&toks(x) and toks(b)&toks(y)) or (toks(a)&toks(y) and toks(b)&toks(x)) for x,y in DERBY)
 def big_opp(name):
     """Đối thủ kế tiếp Elo ≥ 1800 (ClubElo, khớp tên theo từ khóa)."""
     t=toks(name)
     for k,v in ELO_ALL.items():
         if t & toks(k) and v[1]>=1800: return True
     return False
-def sched(fix,kick):
+def sched(fix,kick,team_name=''):
     """Mục 23: (a) nghỉ < 3 ngày hoặc vừa đá cúp châu lục ≤ 4 ngày → mệt (ghi chú);
     (b) trận kế tiếp cách ≤ 4 NGÀY LỊCH là cúp châu lục (C1/C2/C3/ACL) hoặc gặp đội Elo ≥ 1800 (mọi giải) → NGUY CƠ XOAY TUA."""
     OK=('Premier League','LaLiga','Bundesliga','Serie A','Ligue 1','J. League','Champions League','Europa League','AFC Champions League')
@@ -56,7 +59,7 @@ def sched(fix,kick):
     rest=(k-f(p)).total_seconds()/86400 if p else None
     dn=(f(n).date()-k.date()).days if n else None
     cup=lambda x:any(w in x['tournament']['name'] for w in ('Champions League','Europa League','AFC Champions League'))   # C1/EL/ACL
-    rot=bool(n and dn<=4 and (cup(n) or big_opp(n['opponent']['name'])))   # cúp quốc nội chỉ tính khi gặp đội Elo ≥ 1800
+    rot=bool(n and dn<=4 and (cup(n) or big_opp(n['opponent']['name']) or is_derby(team_name,n['opponent']['name'])))   # cúp quốc nội không xét
     return dict(rest=rest,prev=p and p['tournament']['name'],next=n and f"{n['tournament']['name']} gặp {n['opponent']['name']} sau {dn} ngày",
         tired=bool(p and (rest<3 or (cup(p) and rest<=4.5))),rot=rot)
 def lin27(d):
@@ -116,7 +119,7 @@ for tab,row,time,lab,h,a,hn,an,hc,tt,cr,cd,ref,fid in M:
     def fx(tid):
         p=f'{SP}/t_{tid}.json'
         return json.load(open(p))['fixtures']['allFixtures']['fixtures'] if os.path.exists(p) else []
-    sh,sa=sched(fx(fh),kick),sched(fx(fa),kick)
+    sh,sa=sched(fx(fh),kick,fhn),sched(fx(fa),kick,fan)
     LH,LA=lin27(LUP.get(f'{tab}{row}_homeTeam')),lin27(LUP.get(f'{tab}{row}_awayTeam'))
     mid=f'{tab}{row}'; MATCH[mid]=[]; SLOT[mid]=time
     chrow={'PL':200,'LL':200,'BL':200}[tab]+sorted(r_ for (t_,r_) in CHU if t_==tab).index(row) if (tab,row) in CHU else None
@@ -128,7 +131,7 @@ for tab,row,time,lab,h,a,hn,an,hc,tt,cr,cd,ref,fid in M:
             price_src=('Pinnacle 27/11 22:45' if mk in('hc','tot') else 'người dùng 27/11') if s['odds'] else None,
             move=moved(P1,P2,mk,s['side']) if mk in('hc','tot') else None,elo=(eh[1],ea[1]),sched=(sh,sa),lineup=(LH,LA),
             card=dict(ref=rr,kv_card=kv.get('card'),elo=(eh[1],ea[1]),big=(eh[1]>=1800 and ea[1]>=1800),pl=(tab=='PL')),
-            time=time,lab=lab,hn=hn,an=an,od=od))
+            time=time,lab=lab,hn=hn,an=an,od=od,tinh_chat=dict(TC.get(mid,{}),derby=TC.get(mid,{}).get('derby') or is_derby(fhn,fan))))
 # ================= J1 =================
 J=json.load(open(f'j1/res_{DAYK}.json'))
 sys.argv=['x','28/11']
@@ -159,7 +162,7 @@ for r in J['RES']:
     def fx(tid):
         p=f'j1/fm/t_{tid}.json'
         return json.load(open(p))['fixtures']['allFixtures']['fixtures'] if os.path.exists(p) else []
-    sh,sa=sched(fx(r['h']),kick),sched(fx(r['a']),kick)
+    sh,sa=sched(fx(r['h']),kick,r['hn']),sched(fx(r['a']),kick,r['an'])
     NM={'Kyoto Sanga FC':'Kyoto Purple Sanga','Sanfrecce Hiroshima':'Hiroshima Sanfrecce FC','Shimizu S-Pulse':'Shimizu S Pulse','Fagiano Okayama FC':'Fagiano Okayama'}
     P1=pin('j1/odds.json',NM.get(r['hn'],r['hn']),NM.get(r['an'],r['an'])); P2=pin('d28/odds2/soccer_japan_j_league.json',NM.get(r['hn'],r['hn']),NM.get(r['an'],r['an']))
     fl=J['CS'][str(row)]['F']
@@ -168,7 +171,7 @@ for r in J['RES']:
         BETS.append(dict(league='J1',tab='J1',row=row+i,mid=mid,mk=mk,x=x,s=s,H=r['H'],A=r['A'],names=([SH[r['hn']],r['hn']],[SH[r['an']],r['an']]),flags=fl,kv=r['kv'],
             price_src=('Pinnacle 27/11 22:45' if mk in('hc','tot') else 'người dùng 27/11') if s['odds'] else None,
             move=moved(P1,P2,mk,s['side']) if mk in('hc','tot') else None,elo=tuple(r['elo']),sched=(sh,sa),lineup=(LH,LA),card=None,
-            time=r['time'],lab=f"{r['hn']} (Nhà) – {r['an']} (Khách)",hn=SH[r['hn']],an=SH[r['an']]))
+            time=r['time'],lab=f"{r['hn']} (Nhà) – {r['an']} (Khách)",hn=SH[r['hn']],an=SH[r['an']],tinh_chat=dict(TC.get(mid,{}),derby=TC.get(mid,{}).get('derby') or is_derby(r['hn'],r['an']))))
 # ================= CHẤM =================
 for b in BETS:
     g=grade(b); b.update(g); MATCH[b['mid']].append(b)
@@ -264,7 +267,8 @@ for mid,bs in MATCH.items():
         elif b['mk']=='chc':
             st=next((d for m,k,d in b['steps'] if m=='30(c)'),None); kq=next((k for m,k,d in b['steps'] if m=='30(c)'),'')
             bl=f"Chấp góc (mục 30): kỳ vọng mô hình {lg(round(b['kv']['ch'],1))}–{lg(round(b['kv']['ca_'],1))} • kèo đang chọn {c} (tier {t}) → cờ lối đá: {kq}"
-        PAY.setdefault(b['tab'],{})[b['row']]=dict(mk=b['mk'],asy=[c,s['odds'] if s['odds'] else '',vn_num(au_of(b)),vn_num(av_of(b)),t,SRC['J1' if b['tab']=='J1' else 'EU'],vn_num(ay)],odl=odl,bl=vn_num(bl),
+        mau=sorted({q.get('lg') or ('ACL' if q.get('acl') else 'J1 League') for q in b['H']+b['A']})
+        PAY.setdefault(b['tab'],{})[b['row']]=dict(mau=mau,price_src=b.get('price_src'),mk=b['mk'],asy=[c,s['odds'] if s['odds'] else '',vn_num(au_of(b)),vn_num(av_of(b)),t,SRC['J1' if b['tab']=='J1' else 'EU'],vn_num(ay)],odl=odl,bl=vn_num(bl),
             pri=b.get('pri'),top=b.get('top'),t=t,mid=mid,steps=b['steps'],abn=b.get('abn'))
 json.dump(PAY,open(f'results/sheet_engine_{DAYK}.json','w'),ensure_ascii=False,default=str)
 print('payload',{k:len(v) for k,v in PAY.items()})

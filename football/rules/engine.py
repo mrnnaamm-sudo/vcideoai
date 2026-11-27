@@ -88,10 +88,17 @@ def grade(b):
             d=ref['ryc']-ref['ravg']; d_pick=d if pick_tai else -d
             ref_ok=d_pick>-0.5
         else: d_pick=None; ref_ok=None
-        cdev=abs(c['kv_card']-x['line']) if c.get('kv_card') is not None else None
+        tc=b.get('tinh_chat') or {}
+        f24=(1.15 if tc.get('derby') else 1)*(1.10 if tc.get('quyet_dinh') else 1)*(1.05 if tc.get('nhieu_loi') else 1)*(0.92 if tc.get('het_dong_luc') else 1)
+        kvc=c['kv_card']*f24 if c.get('kv_card') is not None else None
+        cdev=abs(kvc-x['line']) if kvc is not None else None
         t=tier(s,'card',True,ref_ok,cdev,d_pick)
         if t=='B?': t='C'
         step('5',f"trọng tài lệch {d_pick:+.2f} theo cửa chọn" if d_pick is not None else 'trọng tài thiếu mẫu (< 10 trận) → không lên C+/B',t)
+        # mục 24: Tài thẻ chỉ xét B khi hệ số ≥ 1,0; derby/trận quyết định không vào Xỉu thẻ
+        if pick_tai and f24<1.0 and t in('A','B'): t='C+'
+        if (not pick_tai) and (tc.get('derby') or tc.get('quyet_dinh')): t='C'
+        step('24',f"hệ số tính chất trận {f24:.2f}"+(' (derby)' if tc.get('derby') else '')+(' (trận quyết định)' if tc.get('quyet_dinh') else ''),t)
         cls,g=elo_class(*c['elo'])
         cap='C' if cls=='QUÁ LỆCH' else ('B' if (cls=='CHÊNH VỪA' and not c.get('big') and not c.get('pl')) else 'A')
         if ORD[t]<ORD[cap]: t=cap
@@ -205,6 +212,11 @@ def grade(b):
             backs=(mk in('hc','chc') and s['side']==side_)
             if backs: b['noTOP']=True; notes.append(f"Mục 23(b): {nm} đá {S_['next']} → NGUY CƠ XOAY TUA, không chọn cửa {nm} làm TOP")
             elif mk in('hc','chc'): notes.append(f"Mục 23(b): {nm} đá {S_['next']} → nguy cơ xoay tua, điểm cộng cho cửa đối thủ")
+    tc=b.get('tinh_chat') or {}
+    if mk=='hc' and tc.get('het_dong_luc_doi'):
+        Lm=x['line'] if s['side']==0 else -x['line']; nm=b['hn'] if s['side']==0 else b['an']
+        if nm in tc['het_dong_luc_doi'] and Lm<=-1 and t!='C':
+            t='C'; notes.append(f"Mục 23(c): {nm} hết động lực mà phải chấp {abs(Lm):g} → không theo, tối đa C")
     step('23','xoay tua: '+(', '.join(nm for S_,nm in ((sh,b['hn']),(sa,b['an'])) if S_ and S_['rot']) or 'không'))
     # mục 16 (áp sau cùng): tối đa C
     if b.get('abn') and t!='C': t='C'; notes.insert(0,f"⚠ KÈO BẤT THƯỜNG ({b['abn']})")
