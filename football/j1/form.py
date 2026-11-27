@@ -17,7 +17,7 @@ for r in D['RES']:
             sh=pair(A,'total_shots',i,j); so=pair(A,'ShotsOnTarget',i,j); fo=pair(A,'fouls',i,j); sv=pair(A,'keeper_saves',i,j)
             c1t=(c1[0]+c1[1]) if c1[0] is not None else None; cft=(cf[0]+cf[1]) if cf[0] is not None else None
             ry=(rd[0] or 0,rd[1] or 0)
-            F.append([SER,f"{nm} • {r['hn']} (Nhà) – {r['an']} (Khách)",q['date'],q['opp'],'Nhà' if home else 'Khách','J1 League',
+            F.append([SER,f"{nm} • {r['hn']} (Nhà) – {r['an']} (Khách)",q['date'],q['opp'],'Nhà' if home else 'Khách','ACL Elite' if q.get('acl') else 'J1 League',
               'Thắng' if q['gf']>q['ga'] else ('Hòa' if q['gf']==q['ga'] else 'Thua'),
               f"{q['ht'][0]}–{q['ht'][1]}" if q['ht'] else '',f"{q['gf']}–{q['ga']}",n(c1t),n(cft-c1t if (cft is not None and c1t is not None) else None),n(cft),n(cf[0]),n(cf[1]),
               n(y[0]),n(y[1]),n((y[0] or 0)+(y[1] or 0)) if y[0] is not None else '',n(ry[0]),n(ry[1]),n((y[0] or 0)+(y[1] or 0)+2*(ry[0]+ry[1])) if y[0] is not None else '',

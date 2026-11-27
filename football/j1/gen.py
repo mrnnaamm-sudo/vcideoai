@@ -82,18 +82,36 @@ for r in D['RES']:
             pb,gb,po=P(RB),sum(q['gf'] for q in RB[:5]),P(RO)
             if pb<=2 and gb<=2 and po>=4:
                 t='C+'; notes0.append(f"Mục 14(8): {(h_ if s['side']==0 else a_)} chỉ {pb} điểm, ghi {gb} bàn trong 5 trận gần nhất (đối thủ {po} điểm) → phong độ ngắn hạn phản bác rõ, hạ B → C+, bỏ Ưu tiên/TOP")
+        if t in ('A','B'):
+            def v(q,mine):
+                if mk in('hc','chc'):
+                    if mk=='chc' and q['cf'] is None: return None
+                    m=(q['gf']-q['ga']) if mk=='hc' else (q['cf']-q['ca']); return (m+L0) if mine else (-m+L0)
+                k={'tot':q['gf']+q['ga'],'cor':q['cor'],'h1':q['h1']}[mk]
+                return None if k is None else ((k-L0) if s['side']==0 else (L0-k))
+            L0=x['line'] if s['side']==0 else -x['line']
+            if mk not in('hc','chc'): L0=x['line']
+            mineH=(s['side']==0)
+            vv=[v(q,mineH) for q in r['H'][:5]]+[v(q,not mineH) for q in r['A'][:5]]
+            vv=[z for z in vv if z is not None]; w=sum(z>0 for z in vv); l=sum(z<0 for z in vv)
+            if w+l and w/(w+l)<=0.40:
+                t={'A':'B','B':'C+'}[t]; notes0.append(f"Mục 14(8b): 5 trận gần nhất của hai đội chỉ đạt {w}/{w+l} ({w/(w+l):.0%}) ở kèo này, ngược mẫu 10 trận → hạ 1 bậc")
         out.append(dict(r=rr,mk=mk,x=x,s=s,c=c,base=base,t=t,to=to,chg=chg,notes=notes0))
     ROWS[row]=dict(r=r,out=out,bk=bk,acl=acl,c29=c29,big=big,LH=LH,LA=LA)
 # điều chỉnh theo tin lực lượng (Agent Reach / Football LAB) – mục 7, 27: tối đa ±1 bậc
-def bump(row,mk,new,why):
+def bump(row,mk,how,why):
+    """Tin lực lượng (mục 7/27): PHẢN BÁC → hạ 1 bậc; ỦNG HỘ → chỉ ghi điểm cộng, KHÔNG nâng tier (mục 27e)."""
+    DOWN={'A':'B','B':'C+','C+':'C','C':'C'}
     for o in ROWS[row]['out']:
-        if o['mk']==mk: o['t0']=o['t']; o['t']=new; o['notes'].append(why)
-bump(165,'hc','B','Agent Reach (Football LAB, cập nhật 26/11): Chiba mất 2 trụ cột phòng ngự – Tsukui (treo giò) và Nduka (cầu thủ mượn từ Kobe, không được đá gặp đội chủ quản); Kobe mất trung vệ Yamakawa (treo giò) → tin lực lượng phản bác một phần cửa Chiba, hạ A → B (mục 7/27, tối đa 1 bậc)')
-bump(150,'hc','C+','Agent Reach (Football LAB, cập nhật 26/11): Cerezo vắng Lucas Fernandes, Kagawa, Okazawa và 2 người treo giò (Sakuragawa, Cools) → ủng hộ Kyoto, nâng C → C+ (mục 7/27, tối đa 1 bậc)')
-bump(160,'hc','C+','Agent Reach (Football LAB): Kashima vắng Kim Tae-hyeon, Higuchi, Hirose, Koike, Anzai (hàng thủ – hai biên) và vừa đá ACL 25/11 → ủng hộ Okayama, nâng C → C+ (mục 7/23/27, tối đa 1 bậc)')
+        if o['mk']==mk:
+            if how=='down': o['t']=DOWN[o['t']]
+            o['notes'].append(why)
+bump(165,'hc','down','Agent Reach (Football LAB, cập nhật 26/11): Chiba mất 2 trụ cột phòng ngự – Tsukui (treo giò) và Nduka (cầu thủ mượn từ Kobe, không được đá gặp đội chủ quản); Kobe mất trung vệ Yamakawa (treo giò) → tin lực lượng phản bác một phần cửa Chiba, hạ 1 bậc (mục 7/27)')
+bump(150,'hc','note','Agent Reach (Football LAB, cập nhật 26/11): Cerezo vắng Lucas Fernandes, Kagawa, Okazawa và 2 người treo giò (Sakuragawa, Cools) → điểm cộng cho Kyoto (mục 27e: ủng hộ chỉ ghi nhận, không nâng tier)')
+bump(160,'hc','note','Agent Reach (Football LAB): Kashima vắng Kim Tae-hyeon, Higuchi, Hirose, Koike, Anzai (hàng thủ – hai biên) và vừa đá ACL 25/11 → điểm cộng cho Okayama (không nâng tier)')
 # ghi chú riêng
 EXTRA={(155,'hc'):'Cơ sở của mô hình: Urawa sân khách rất kém (5 trận khách gần nhất 1T–1H–3B, ghi 4 lọt 11), Shimizu sân nhà 2T–1H–2B; nhưng Shimizu 6 trận liền không thắng Urawa (Agent Reach: dongqiudi, Football LAB)',
-       (165,'hc'):'Kobe 5 trận chính thức không thắng (Football LAB) và đá ACL 24/11, 01/12 (mục 23)',
+       (165,'hc'):'Kobe 5 trận chính thức không thắng (gồm thua Công An Hà Nội 1–3 ở ACL 24/11) và đá ACL lại 01/12 (mục 23)',
        (165,'tot'):'Kobe mất trung vệ Yamakawa, Chiba mất Tsukui + Nduka → hai hàng thủ yếu đi, cùng chiều Tài'}
 # ưu tiên / TOP
 for row,M in ROWS.items():
@@ -107,7 +125,7 @@ for row,M in ROWS.items():
 for sl,c in slots.items():
     c.sort(key=lambda o:(TR[o['t']],-o['s']['ev']))
     for k,o in enumerate(c[:2]): o['top']=f"★ TOP {k+1} khung {sl}"
-SRC='FotMob 10 trận J1 gần nhất • Odds API 27/11 (Pinnacle; giá góc: người dùng) • Elo ước tính từ BXH (không có ClubElo cho J1) • Football LAB'
+SRC='FotMob 10 trận gần nhất (J1 + ACL Elite) • Odds API 27/11 (Pinnacle; giá góc: người dùng) • Elo ước tính từ BXH (không có ClubElo cho J1) • Football LAB'
 VAL=[];ODDS=[];BKL=[]
 for row,M in sorted(ROWS.items()):
     r=M['r']; hn,an=r['hn'],r['an']; h_,a_=SH[hn],SH[an]; labx=f"{hn} (Nhà) – {an} (Khách)"

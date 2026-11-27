@@ -20,8 +20,18 @@ ELO={}
 for r in tb:
     gf,ga=map(int,r['scoresStr'].split('-')); ELO[str(r['id'])]=1500+110*(gf-ga)/max(1,r['played'])
 RANK={str(r['id']):(r['idx'],r['pts'],r['played'],r['scoresStr']) for r in tb}
+ACL={}
+def acl(tid):
+    """Mục 1 cho J1: VĐQG + cúp châu lục (AFC Champions League Elite/Two) – tương đương cúp châu Âu."""
+    if tid not in ACL:
+        p=f"{FM}/t_{tid}.json"; out=[]
+        if os.path.exists(p):
+            for f in json.load(open(p))['fixtures']['allFixtures']['fixtures']:
+                if 'AFC' in f['tournament']['name'] and f['status'].get('finished'): f['_acl']=True; out.append(f)
+        ACL[tid]=out
+    return ACL[tid]
 def recs(tid,before):
-    fin=[m for m in ALL if m['status'].get('finished') and not m['status'].get('cancelled') and str(tid) in (str(m['home']['id']),str(m['away']['id'])) and m['status']['utcTime']<before]
+    fin=[m for m in ALL+acl(str(tid)) if m['status'].get('finished') and not m['status'].get('cancelled') and str(tid) in (str(m['home']['id']),str(m['away']['id'])) and m['status']['utcTime']<before]
     fin.sort(key=lambda m:m['status']['utcTime'],reverse=True)
     out=[]
     for m in fin[:10]:
@@ -39,7 +49,7 @@ def recs(tid,before):
         except Exception: pass
         cor=S.get('corners'); c1=S1.get('corners'); yc=S.get('yellow_cards'); rc=S.get('red_cards')
         xg=S.get('expected_goals')
-        r=dict(mid=m['id'],date=vn(m['status']['utcTime']).strftime('%d/%m/%Y'),opp=(m['away'] if home else m['home'])['name'],home=home,gf=gf,ga=ga,ht=ht,
+        r=dict(acl=bool(m.get('_acl')),mid=m['id'],date=vn(m['status']['utcTime']).strftime('%d/%m/%Y'),opp=(m['away'] if home else m['home'])['name'],home=home,gf=gf,ga=ga,ht=ht,
                cf=_num(cor[i]) if cor else None,ca=_num(cor[j]) if cor else None,cor=(_num(cor[0])+_num(cor[1])) if cor else None,
                h1=(_num(c1[0])+_num(c1[1])) if c1 else None,c1f=_num(c1[i]) if c1 else None,c1a=_num(c1[j]) if c1 else None,
                cards=((_num(yc[0]) or 0)+(_num(yc[1]) or 0)+2*((_num(rc[0]) if rc else 0) or 0)+2*((_num(rc[1]) if rc else 0) or 0)) if yc else None,
