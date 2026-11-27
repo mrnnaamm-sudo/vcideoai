@@ -2,8 +2,11 @@
 python3 rules/audit.py results/sheet_engine_<ngày>.json <file json chứa cột AW đọc ngược từ sheet {tab:{row:tier}}>
 Có bất kỳ dòng lệch → KHÔNG được báo kèo cho người dùng."""
 import json,sys,re,os
+import shutil as _sh,glob as _gl,sys as _sy; _sy.dont_write_bytecode=True
+[_sh.rmtree(_p,ignore_errors=True) for _p in _gl.glob(__import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath(__file__))),'**','__pycache__'),recursive=True)]   # không dùng mã biên dịch cũ: bộ máy chạy đúng mã nguồn hiện tại
 sys.path.insert(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from rules import registry
+from rules import registry, a1_sync
+a1_sync.require(os.environ.get('A1_META'),os.environ.get('A1_NOTES'))
 # A1 ↔ bảng đối chiếu: mọi mục trong A1 phải có trong REG và ngược lại
 A1=open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'quy_chuan.md')).read()
 mucA1={int(x) for x in re.findall(r'(?m)^(\d+)\. ',A1)}
@@ -17,7 +20,7 @@ for tab,rows in P.items():
         if s!=t: err.append(f"{tab}{r}: sheet {s} ≠ bộ máy {t}")
         ay=d['asy'][6]
         # mục 1: mẫu chỉ gồm VĐQG + C1/EL (+ACL với giải châu Á)
-        OKL={'English Premier League','Spanish LALIGA','German Bundesliga','Italian Serie A','French Ligue 1','UEFA Champions League','UEFA Europa League','J1 League','ACL'}
+        OKL=set(registry.MAU_GIAI)
         bad=[l for l in d.get('mau',[]) if l not in OKL]
         if bad: err.append(f"{tab}{r}: mẫu có giải ngoài mục 1: {bad}")
         # mục 6: chấp/tài xỉu bàn phải là giá Pinnacle; không giá quy đổi

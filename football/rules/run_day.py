@@ -3,10 +3,14 @@ python3 rules/run_day.py  → results/engine_28-11.json (mỗi kèo: tier, các 
 Cùng nguồn, cùng thứ tự kiểm cho mọi giải: mẫu 10 trận (mục 1) • giá Pinnacle mới nhất cho chấp/tài xỉu bàn, giá người dùng cho góc/thẻ/chấp góc (mục 6)
 • engine.grade (mục 5, 8, 14(1), 14(8), 14(8b), 15, 16, 20(d), 23, 27, 28, 29, 30) • engine.rank (mục 9)."""
 import json,sys,os,glob,re,datetime as dt,unicodedata
+import shutil as _sh,glob as _gl,sys as _sy; _sy.dont_write_bytecode=True
+[_sh.rmtree(_p,ignore_errors=True) for _p in _gl.glob(__import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath(__file__))),'**','__pycache__'),recursive=True)]   # không dùng mã biên dịch cũ: bộ máy chạy đúng mã nguồn hiện tại
 sys.path.insert(0,'.')
 from model import evaluate,chc_eval
 from gen3 import best
 from rules.engine import grade,rank,ORD
+from rules import a1_sync
+QC_VER=a1_sync.require(os.environ.get('A1_META'),os.environ.get('A1_NOTES'))   # mục 0: A1 lệch bộ máy → DỪNG PHÂN TÍCH
 SP='/tmp/claude-0/-home-user-vcideoai/bc9353a1-6091-5ff6-82cc-896d2667346b/scratchpad/fmt'
 DAYK='28-11'; KICK=dt.datetime(2026,11,28)
 def norm(s): return ''.join(c for c in unicodedata.normalize('NFD',s.lower()) if unicodedata.category(c)!='Mn')
