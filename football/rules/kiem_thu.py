@@ -155,6 +155,18 @@ CASES+=[
  ('8','Biên C+: EV 2,01% → C+; 1,99% → C', lambda: T(bet(ev=0.0201,evm=0.01,psa=0.54))=='C+' and T(bet(ev=0.0199,evm=0.01,psa=0.54))=='C'),
 ]
 
+def _khong_doc_tab_ket_qua():
+    """Mục 0(k): bộ máy (rules/*.py trừ kiem_thu, model.py, corner_style.py, lineup.py) không đọc tab 'Tổng kết RR tuần'/'Kèo đã vào' (sheetId 204, 206)."""
+    import glob,re
+    D=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    fs=[f for f in glob.glob(os.path.join(D,'rules','*.py')) if not f.endswith(('kiem_thu.py','doi_chieu.py'))]+[os.path.join(D,x) for x in ('model.py','corner_style.py','lineup.py')]
+    for f in fs:
+        s=open(f).read()
+        if re.search(r"Tổng kết RR tuần|Kèo đã vào",s): return False
+    from rules import a1_sync
+    return not ({204,206}&set(a1_sync.TABS))
+CASES+=[('0(k)','Bộ máy không đọc tab Tổng kết RR tuần / Kèo đã vào và hai tab này không nằm trong danh sách tab kèo của A1', _khong_doc_tab_ket_qua)]
+
 def _raises(f):
     try: f(); return False
     except ValueError: return True
