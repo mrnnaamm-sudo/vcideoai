@@ -8,11 +8,10 @@ FORCE_C={('PL',155):'Coventry vắng 7 người (gồm 2 tiền đạo Wright, A
  ('PL',154):'trọng tài Andy Madley NHẸ TAY (3,45 vàng/trận, TB giải 3,87) phản bác Tài (mục 5)',
  ('PL',164):'mẫu 50% < 70%, trọng tài Robert Jones trung bình; Tài thẻ giá cao 2,30 (bài học mục 14)',
  ('BL',151):'Gladbach vắng Kleindienst, Bremen vắng Grüll + 4 người (bài học Gala–Villa)',
- ('BL',165):'bài học PSV (HSV hai lần thua −5 trong mẫu; đang theo dõi hiệu quả – mục 14); Bayern đá C1 3 ngày trước, Pokal 3 ngày sau, vắng Kane, Olise',
  ('BL',169):'mẫu 60% < 70% (mục 5); trọng tài Dankert nhẹ tay, trận chênh lệch (Elo 1673–2041, hệ số 0,92) cùng chiều Xỉu → chỉ ghi lưu ý',
  ('BL',174):'trọng tài Timo Gerach lệch < 0,5 vàng/trận, 4 thẻ đỏ/13 trận phản bác Xỉu (mục 5)',
  ('BL',164):'trọng tài Sören Storks CHẶT TAY phản bác Xỉu (mục 5)'}
-NOTE={('PL',156):'Coventry mất 2 tiền đạo chính → ủng hộ Xỉu',('PL',160):'MU đá C1 3 ngày trước (mục 23), Elo hai đội ngang nhau (1845–1856)',
+NOTE={('BL',165):'bỏ hạ C theo bài học PSV từ 27/11 (5/5 kèo cửa dưới bị hạ C ở EL 27/11 đều thắng – mục 14); Bayern đá C1 3 ngày trước, Pokal 3 ngày sau (mục 23, nguy cơ xoay tua), vắng Kane, Olise; đội hình giả định Bayern tấn công 0,92 (mục 27); HSV có 2 trận thua −5 trong mẫu → chỉ lưu ý',('PL',156):'Coventry mất 2 tiền đạo chính → ủng hộ Xỉu',('PL',160):'MU đá C1 3 ngày trước (mục 23), Elo hai đội ngang nhau (1845–1856)',
  ('LL',161):'Athletic vắng 2 tiền đạo Guruzeta, Sannadi',('BL',160):'Köln vắng Dallinga, Skhiri; 3 ngày sau Köln đá Pokal (mục 23)',
  ('BL',170):'tay chấp +1 < 1,5 nên không áp bài học PSV',('BL',171):'Mainz TB 4,1 bàn, Union lọt xG 2,38/trận',('LL',155):'Betis vừa đá C1 4 ngày trước (mục 23)',
  ('BL',162):'Köln TB 10,6 góc, Elversberg 11,6 góc'}
