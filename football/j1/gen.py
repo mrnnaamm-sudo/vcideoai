@@ -75,6 +75,13 @@ for r in D['RES']:
                 t={'A':'B','B':'C+'}[t]; notes0.append('Mục 28: cờ lối đá PHẢN BÁC → hạ 1 bậc')
             elif v=='ủng hộ': notes0.append('Mục 28: lối đá ủng hộ (điểm cộng, không nâng)')
         else: notes0=[]
+        # mục 14(8): đội được chọn sa sút rõ ở 5 trận gần nhất → tối đa C+
+        if mk in ('hc','chc') and t in ('A','B'):
+            RB,RO=(r['H'],r['A']) if s['side']==0 else (r['A'],r['H'])
+            P=lambda R:sum(3 if q['gf']>q['ga'] else (1 if q['gf']==q['ga'] else 0) for q in R[:5])
+            pb,gb,po=P(RB),sum(q['gf'] for q in RB[:5]),P(RO)
+            if pb<=2 and gb<=2 and po>=4:
+                t='C+'; notes0.append(f"Mục 14(8): {(h_ if s['side']==0 else a_)} chỉ {pb} điểm, ghi {gb} bàn trong 5 trận gần nhất (đối thủ {po} điểm) → phong độ ngắn hạn phản bác rõ, hạ B → C+, bỏ Ưu tiên/TOP")
         out.append(dict(r=rr,mk=mk,x=x,s=s,c=c,base=base,t=t,to=to,chg=chg,notes=notes0))
     ROWS[row]=dict(r=r,out=out,bk=bk,acl=acl,c29=c29,big=big,LH=LH,LA=LA)
 # điều chỉnh theo tin lực lượng (Agent Reach / Football LAB) – mục 7, 27: tối đa ±1 bậc
@@ -85,7 +92,7 @@ bump(165,'hc','B','Agent Reach (Football LAB, cập nhật 26/11): Chiba mất 2
 bump(150,'hc','C+','Agent Reach (Football LAB, cập nhật 26/11): Cerezo vắng Lucas Fernandes, Kagawa, Okazawa và 2 người treo giò (Sakuragawa, Cools) → ủng hộ Kyoto, nâng C → C+ (mục 7/27, tối đa 1 bậc)')
 bump(160,'hc','C+','Agent Reach (Football LAB): Kashima vắng Kim Tae-hyeon, Higuchi, Hirose, Koike, Anzai (hàng thủ – hai biên) và vừa đá ACL 25/11 → ủng hộ Okayama, nâng C → C+ (mục 7/23/27, tối đa 1 bậc)')
 # ghi chú riêng
-EXTRA={(155,'hc'):'Shimizu chỉ 1 điểm/5 trận gần nhất, ghi 1 bàn (đã nằm trong mẫu 10 trận) và 6 trận liền không thắng Urawa (Agent Reach: dongqiudi, Football LAB) → rủi ro cao; chỉ mức B, không lên A',
+EXTRA={(155,'hc'):'Cơ sở của mô hình: Urawa sân khách rất kém (5 trận khách gần nhất 1T–1H–3B, ghi 4 lọt 11), Shimizu sân nhà 2T–1H–2B; nhưng Shimizu 6 trận liền không thắng Urawa (Agent Reach: dongqiudi, Football LAB)',
        (165,'hc'):'Kobe 5 trận chính thức không thắng (Football LAB) và đá ACL 24/11, 01/12 (mục 23)',
        (165,'tot'):'Kobe mất trung vệ Yamakawa, Chiba mất Tsukui + Nduka → hai hàng thủ yếu đi, cùng chiều Tài'}
 # ưu tiên / TOP
