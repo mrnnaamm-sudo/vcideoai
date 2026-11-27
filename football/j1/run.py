@@ -61,7 +61,7 @@ def xgsum(R):
     v=[r for r in R if r['xgf'] is not None]
     return dict(n=len(v),xgf=sum(r['xgf'] for r in v)/len(v),xga=sum(r['xga'] for r in v)/len(v)) if v else None
 # odds (Pinnacle, Odds API)
-OD=json.load(open('j1/odds.json'))
+OD=json.load(open(os.environ.get('ODDS','j1/odds.json')))  # mục 6: giá Pinnacle mới nhất
 NM={'Kyoto Sanga FC':'Kyoto Purple Sanga','Sanfrecce Hiroshima':'Hiroshima Sanfrecce FC','Shimizu S-Pulse':'Shimizu S Pulse','Fagiano Okayama FC':'Fagiano Okayama',
     'Yokohama F.Marinos':'Yokohama F Marinos','Mito Hollyhock':'Mito HollyHock','Machida Zelvia':'FC Machida Zelvia'}
 def odds_for(hn,an):
