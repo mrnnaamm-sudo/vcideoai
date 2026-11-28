@@ -1,677 +1,5 @@
 [
  {
-  "id": "1640217308",
-  "commence_time": "2026-11-28T15:00:00Z",
-  "home_team": "Leeds United",
-  "away_team": "Coventry City",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Leeds United",
-        "price": 2.07,
-        "point": -1.25
-       },
-       {
-        "name": "Coventry City",
-        "price": 1.87,
-        "point": 1.25
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 1.862,
-        "point": 2.75
-       },
-       {
-        "name": "Under",
-        "price": 2.05,
-        "point": 2.75
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640912243",
-  "commence_time": "2026-12-01T20:00:00Z",
-  "home_team": "Coventry City",
-  "away_team": "Ipswich Town",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Coventry City",
-        "price": 1.98,
-        "point": -0.25
-       },
-       {
-        "name": "Ipswich Town",
-        "price": 1.877,
-        "point": 0.25
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 1.877,
-        "point": 2.75
-       },
-       {
-        "name": "Under",
-        "price": 1.962,
-        "point": 2.75
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640911855",
-  "commence_time": "2026-12-02T20:15:00Z",
-  "home_team": "Newcastle United",
-  "away_team": "Manchester United",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Newcastle United",
-        "price": 1.971,
-        "point": 0.0
-       },
-       {
-        "name": "Manchester United",
-        "price": 1.885,
-        "point": -0.0
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 1.971,
-        "point": 3.25
-       },
-       {
-        "name": "Under",
-        "price": 1.87,
-        "point": 3.25
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640213881",
-  "commence_time": "2026-11-29T14:05:00Z",
-  "home_team": "Sunderland",
-  "away_team": "Tottenham Hotspur",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Sunderland",
-        "price": 1.962,
-        "point": 0.5
-       },
-       {
-        "name": "Tottenham Hotspur",
-        "price": 1.943,
-        "point": -0.5
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 2.02,
-        "point": 2.5
-       },
-       {
-        "name": "Under",
-        "price": 1.877,
-        "point": 2.5
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640217309",
-  "commence_time": "2026-11-29T14:05:00Z",
-  "home_team": "Crystal Palace",
-  "away_team": "Hull City",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Crystal Palace",
-        "price": 1.971,
-        "point": -0.5
-       },
-       {
-        "name": "Hull City",
-        "price": 1.935,
-        "point": 0.5
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 2.02,
-        "point": 2.75
-       },
-       {
-        "name": "Under",
-        "price": 1.877,
-        "point": 2.75
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640213879",
-  "commence_time": "2026-11-29T14:05:00Z",
-  "home_team": "Fulham",
-  "away_team": "Bournemouth",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Fulham",
-        "price": 2.06,
-        "point": 0.0
-       },
-       {
-        "name": "Bournemouth",
-        "price": 1.855,
-        "point": -0.0
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 2.07,
-        "point": 2.75
-       },
-       {
-        "name": "Under",
-        "price": 1.833,
-        "point": 2.75
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640218865",
-  "commence_time": "2026-11-28T15:00:00Z",
-  "home_team": "Manchester United",
-  "away_team": "Brentford",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Manchester United",
-        "price": 2.1,
-        "point": -0.25
-       },
-       {
-        "name": "Brentford",
-        "price": 1.84,
-        "point": 0.25
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 1.926,
-        "point": 3.0
-       },
-       {
-        "name": "Under",
-        "price": 1.98,
-        "point": 3.0
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640919577",
-  "commence_time": "2026-12-03T20:00:00Z",
-  "home_team": "Tottenham Hotspur",
-  "away_team": "Fulham",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Tottenham Hotspur",
-        "price": 2.11,
-        "point": -0.75
-       },
-       {
-        "name": "Fulham",
-        "price": 1.769,
-        "point": 0.75
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 2.0,
-        "point": 2.75
-       },
-       {
-        "name": "Under",
-        "price": 1.84,
-        "point": 2.75
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640912244",
-  "commence_time": "2026-12-02T20:15:00Z",
-  "home_team": "Aston Villa",
-  "away_team": "Everton",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Aston Villa",
-        "price": 2.0,
-        "point": -0.5
-       },
-       {
-        "name": "Everton",
-        "price": 1.862,
-        "point": 0.5
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 1.917,
-        "point": 2.75
-       },
-       {
-        "name": "Under",
-        "price": 1.917,
-        "point": 2.75
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640919578",
-  "commence_time": "2026-12-02T19:30:00Z",
-  "home_team": "Liverpool",
-  "away_team": "Sunderland",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Liverpool",
-        "price": 1.909,
-        "point": -1.25
-       },
-       {
-        "name": "Sunderland",
-        "price": 1.943,
-        "point": 1.25
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 1.917,
-        "point": 3.0
-       },
-       {
-        "name": "Under",
-        "price": 1.917,
-        "point": 3.0
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640217305",
-  "commence_time": "2026-11-28T17:30:00Z",
-  "home_team": "Ipswich Town",
-  "away_team": "Aston Villa",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Ipswich Town",
-        "price": 1.862,
-        "point": 0.5
-       },
-       {
-        "name": "Aston Villa",
-        "price": 2.08,
-        "point": -0.5
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 1.99,
-        "point": 3.0
-       },
-       {
-        "name": "Under",
-        "price": 1.917,
-        "point": 3.0
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640919575",
-  "commence_time": "2026-12-02T20:15:00Z",
-  "home_team": "Brentford",
-  "away_team": "Arsenal",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Brentford",
-        "price": 1.8,
-        "point": 0.75
-       },
-       {
-        "name": "Arsenal",
-        "price": 2.07,
-        "point": -0.75
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 2.03,
-        "point": 2.75
-       },
-       {
-        "name": "Under",
-        "price": 1.82,
-        "point": 2.75
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640217307",
-  "commence_time": "2026-11-29T14:05:00Z",
-  "home_team": "Brighton and Hove Albion",
-  "away_team": "Newcastle United",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Brighton and Hove Albion",
-        "price": 1.962,
-        "point": -1.0
-       },
-       {
-        "name": "Newcastle United",
-        "price": 1.943,
-        "point": 1.0
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 1.87,
-        "point": 3.0
-       },
-       {
-        "name": "Under",
-        "price": 2.02,
-        "point": 3.0
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640217306",
-  "commence_time": "2026-11-29T12:00:00Z",
-  "home_team": "Everton",
-  "away_team": "Liverpool",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Everton",
-        "price": 1.901,
-        "point": 0.75
-       },
-       {
-        "name": "Liverpool",
-        "price": 2.01,
-        "point": -0.75
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 1.847,
-        "point": 2.75
-       },
-       {
-        "name": "Under",
-        "price": 2.05,
-        "point": 2.75
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
   "id": "1640919576",
   "commence_time": "2026-12-02T20:15:00Z",
   "home_team": "Bournemouth",
@@ -681,11 +9,11 @@
    {
     "key": "pinnacle",
     "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
+    "last_update": "2026-11-28T10:47:59Z",
     "markets": [
      {
       "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
+      "last_update": "2026-11-28T10:47:59Z",
       "outcomes": [
        {
         "name": "Bournemouth",
@@ -701,7 +29,7 @@
      },
      {
       "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
+      "last_update": "2026-11-28T10:47:59Z",
       "outcomes": [
        {
         "name": "Over",
@@ -720,46 +48,46 @@
   ]
  },
  {
-  "id": "1640919574",
+  "id": "1640919578",
   "commence_time": "2026-12-02T19:30:00Z",
-  "home_team": "Chelsea",
-  "away_team": "Crystal Palace",
+  "home_team": "Liverpool",
+  "away_team": "Sunderland",
   "nguon": "pinnacle.com (guest arcadia)",
   "bookmakers": [
    {
     "key": "pinnacle",
     "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
+    "last_update": "2026-11-28T10:47:59Z",
     "markets": [
      {
       "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
+      "last_update": "2026-11-28T10:47:59Z",
       "outcomes": [
        {
-        "name": "Chelsea",
-        "price": 1.82,
-        "point": -0.75
+        "name": "Liverpool",
+        "price": 1.909,
+        "point": -1.25
        },
        {
-        "name": "Crystal Palace",
-        "price": 2.05,
-        "point": 0.75
+        "name": "Sunderland",
+        "price": 1.943,
+        "point": 1.25
        }
       ]
      },
      {
       "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
+      "last_update": "2026-11-28T10:47:59Z",
       "outcomes": [
        {
         "name": "Over",
-        "price": 2.07,
-        "point": 3.25
+        "price": 1.917,
+        "point": 3.0
        },
        {
         "name": "Under",
-        "price": 1.787,
-        "point": 3.25
+        "price": 1.917,
+        "point": 3.0
        }
       ]
      }
@@ -777,11 +105,11 @@
    {
     "key": "pinnacle",
     "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
+    "last_update": "2026-11-28T10:47:59Z",
     "markets": [
      {
       "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
+      "last_update": "2026-11-28T10:47:59Z",
       "outcomes": [
        {
         "name": "Manchester City",
@@ -797,7 +125,7 @@
      },
      {
       "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
+      "last_update": "2026-11-28T10:47:59Z",
       "outcomes": [
        {
         "name": "Over",
@@ -816,36 +144,372 @@
   ]
  },
  {
-  "id": "1640213880",
-  "commence_time": "2026-11-29T16:30:00Z",
-  "home_team": "Arsenal",
-  "away_team": "Manchester City",
+  "id": "1640912243",
+  "commence_time": "2026-12-01T20:00:00Z",
+  "home_team": "Coventry City",
+  "away_team": "Ipswich Town",
   "nguon": "pinnacle.com (guest arcadia)",
   "bookmakers": [
    {
     "key": "pinnacle",
     "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
+    "last_update": "2026-11-28T10:47:59Z",
     "markets": [
      {
       "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
+      "last_update": "2026-11-28T10:47:59Z",
       "outcomes": [
        {
-        "name": "Arsenal",
-        "price": 2.06,
-        "point": -0.5
+        "name": "Coventry City",
+        "price": 1.98,
+        "point": -0.25
        },
        {
-        "name": "Manchester City",
-        "price": 1.855,
-        "point": 0.5
+        "name": "Ipswich Town",
+        "price": 1.877,
+        "point": 0.25
        }
       ]
      },
      {
       "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.877,
+        "point": 2.75
+       },
+       {
+        "name": "Under",
+        "price": 1.962,
+        "point": 2.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640213879",
+  "commence_time": "2026-11-29T14:05:00Z",
+  "home_team": "Fulham",
+  "away_team": "Bournemouth",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Fulham",
+        "price": 2.07,
+        "point": 0.0
+       },
+       {
+        "name": "Bournemouth",
+        "price": 1.847,
+        "point": -0.0
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.07,
+        "point": 2.75
+       },
+       {
+        "name": "Under",
+        "price": 1.826,
+        "point": 2.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640217307",
+  "commence_time": "2026-11-29T14:05:00Z",
+  "home_team": "Brighton and Hove Albion",
+  "away_team": "Newcastle United",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Brighton and Hove Albion",
+        "price": 1.962,
+        "point": -1.0
+       },
+       {
+        "name": "Newcastle United",
+        "price": 1.943,
+        "point": 1.0
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.87,
+        "point": 3.0
+       },
+       {
+        "name": "Under",
+        "price": 2.02,
+        "point": 3.0
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640218865",
+  "commence_time": "2026-11-28T15:00:00Z",
+  "home_team": "Manchester United",
+  "away_team": "Brentford",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Manchester United",
+        "price": 2.08,
+        "point": -0.25
+       },
+       {
+        "name": "Brentford",
+        "price": 1.862,
+        "point": 0.25
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.917,
+        "point": 3.0
+       },
+       {
+        "name": "Under",
+        "price": 1.99,
+        "point": 3.0
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640919574",
+  "commence_time": "2026-12-02T19:30:00Z",
+  "home_team": "Chelsea",
+  "away_team": "Crystal Palace",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Chelsea",
+        "price": 1.82,
+        "point": -0.75
+       },
+       {
+        "name": "Crystal Palace",
+        "price": 2.05,
+        "point": 0.75
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.07,
+        "point": 3.25
+       },
+       {
+        "name": "Under",
+        "price": 1.787,
+        "point": 3.25
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640213881",
+  "commence_time": "2026-11-29T14:05:00Z",
+  "home_team": "Sunderland",
+  "away_team": "Tottenham Hotspur",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Sunderland",
+        "price": 1.943,
+        "point": 0.5
+       },
+       {
+        "name": "Tottenham Hotspur",
+        "price": 1.962,
+        "point": -0.5
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.02,
+        "point": 2.5
+       },
+       {
+        "name": "Under",
+        "price": 1.87,
+        "point": 2.5
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640217308",
+  "commence_time": "2026-11-28T15:00:00Z",
+  "home_team": "Leeds United",
+  "away_team": "Coventry City",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Leeds United",
+        "price": 2.11,
+        "point": -1.25
+       },
+       {
+        "name": "Coventry City",
+        "price": 1.833,
+        "point": 1.25
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.862,
+        "point": 2.75
+       },
+       {
+        "name": "Under",
+        "price": 2.05,
+        "point": 2.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640919575",
+  "commence_time": "2026-12-02T20:15:00Z",
+  "home_team": "Brentford",
+  "away_team": "Arsenal",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Brentford",
+        "price": 1.8,
+        "point": 0.75
+       },
+       {
+        "name": "Arsenal",
+        "price": 2.07,
+        "point": -0.75
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
       "outcomes": [
        {
         "name": "Over",
@@ -854,8 +518,104 @@
        },
        {
         "name": "Under",
-        "price": 1.87,
+        "price": 1.82,
         "point": 2.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640217306",
+  "commence_time": "2026-11-29T12:00:00Z",
+  "home_team": "Everton",
+  "away_team": "Liverpool",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Everton",
+        "price": 1.926,
+        "point": 0.75
+       },
+       {
+        "name": "Liverpool",
+        "price": 1.98,
+        "point": -0.75
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.84,
+        "point": 2.75
+       },
+       {
+        "name": "Under",
+        "price": 2.06,
+        "point": 2.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640911855",
+  "commence_time": "2026-12-02T20:15:00Z",
+  "home_team": "Newcastle United",
+  "away_team": "Manchester United",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Newcastle United",
+        "price": 1.971,
+        "point": 0.0
+       },
+       {
+        "name": "Manchester United",
+        "price": 1.885,
+        "point": -0.0
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.971,
+        "point": 3.25
+       },
+       {
+        "name": "Under",
+        "price": 1.87,
+        "point": 3.25
        }
       ]
      }
@@ -873,11 +633,11 @@
    {
     "key": "pinnacle",
     "title": "Pinnacle",
-    "last_update": "2026-11-28T08:41:12Z",
+    "last_update": "2026-11-28T10:47:59Z",
     "markets": [
      {
       "key": "spreads",
-      "last_update": "2026-11-28T08:41:12Z",
+      "last_update": "2026-11-28T10:47:59Z",
       "outcomes": [
        {
         "name": "Hull City",
@@ -893,7 +653,7 @@
      },
      {
       "key": "totals",
-      "last_update": "2026-11-28T08:41:12Z",
+      "last_update": "2026-11-28T10:47:59Z",
       "outcomes": [
        {
         "name": "Over",
@@ -904,6 +664,246 @@
         "name": "Under",
         "price": 1.901,
         "point": 2.5
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640919577",
+  "commence_time": "2026-12-03T20:00:00Z",
+  "home_team": "Tottenham Hotspur",
+  "away_team": "Fulham",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Tottenham Hotspur",
+        "price": 2.11,
+        "point": -0.75
+       },
+       {
+        "name": "Fulham",
+        "price": 1.769,
+        "point": 0.75
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.0,
+        "point": 2.75
+       },
+       {
+        "name": "Under",
+        "price": 1.84,
+        "point": 2.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640213880",
+  "commence_time": "2026-11-29T16:30:00Z",
+  "home_team": "Arsenal",
+  "away_team": "Manchester City",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Arsenal",
+        "price": 2.06,
+        "point": -0.5
+       },
+       {
+        "name": "Manchester City",
+        "price": 1.855,
+        "point": 0.5
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.02,
+        "point": 2.75
+       },
+       {
+        "name": "Under",
+        "price": 1.87,
+        "point": 2.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640912244",
+  "commence_time": "2026-12-02T20:15:00Z",
+  "home_team": "Aston Villa",
+  "away_team": "Everton",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Aston Villa",
+        "price": 2.0,
+        "point": -0.5
+       },
+       {
+        "name": "Everton",
+        "price": 1.862,
+        "point": 0.5
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.917,
+        "point": 2.75
+       },
+       {
+        "name": "Under",
+        "price": 1.917,
+        "point": 2.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640217305",
+  "commence_time": "2026-11-28T17:30:00Z",
+  "home_team": "Ipswich Town",
+  "away_team": "Aston Villa",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Ipswich Town",
+        "price": 1.826,
+        "point": 0.5
+       },
+       {
+        "name": "Aston Villa",
+        "price": 2.12,
+        "point": -0.5
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.04,
+        "point": 3.0
+       },
+       {
+        "name": "Under",
+        "price": 1.877,
+        "point": 3.0
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640217309",
+  "commence_time": "2026-11-29T14:05:00Z",
+  "home_team": "Crystal Palace",
+  "away_team": "Hull City",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T10:47:59Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Crystal Palace",
+        "price": 1.971,
+        "point": -0.5
+       },
+       {
+        "name": "Hull City",
+        "price": 1.935,
+        "point": 0.5
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T10:47:59Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.03,
+        "point": 2.75
+       },
+       {
+        "name": "Under",
+        "price": 1.862,
+        "point": 2.75
        }
       ]
      }

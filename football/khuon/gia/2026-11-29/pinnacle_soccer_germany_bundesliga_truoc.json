@@ -1,0 +1,818 @@
+[
+ {
+  "id": "1640941332",
+  "commence_time": "2026-12-04T19:30:00Z",
+  "home_team": "Bayern Munich",
+  "away_team": "SC Paderborn",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Bayern Munich",
+        "price": 2.01,
+        "point": -3.0
+       },
+       {
+        "name": "SC Paderborn",
+        "price": 1.82,
+        "point": 3.0
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.893,
+        "point": 4.25
+       },
+       {
+        "name": "Under",
+        "price": 1.909,
+        "point": 4.25
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640973262",
+  "commence_time": "2026-12-05T14:30:00Z",
+  "home_team": "RB Leipzig",
+  "away_team": "FSV Mainz 05",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "RB Leipzig",
+        "price": 1.885,
+        "point": -1.0
+       },
+       {
+        "name": "FSV Mainz 05",
+        "price": 1.962,
+        "point": 1.0
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.87,
+        "point": 3.5
+       },
+       {
+        "name": "Under",
+        "price": 1.971,
+        "point": 3.5
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640262046",
+  "commence_time": "2026-11-28T14:30:00Z",
+  "home_team": "Hamburger SV",
+  "away_team": "Bayern Munich",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Hamburger SV",
+        "price": 1.826,
+        "point": 1.75
+       },
+       {
+        "name": "Bayern Munich",
+        "price": 2.08,
+        "point": -1.75
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.02,
+        "point": 3.5
+       },
+       {
+        "name": "Under",
+        "price": 1.862,
+        "point": 3.5
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640941333",
+  "commence_time": "2026-12-05T14:30:00Z",
+  "home_team": "SC Freiburg",
+  "away_team": "TSG Hoffenheim",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "SC Freiburg",
+        "price": 2.1,
+        "point": -0.5
+       },
+       {
+        "name": "TSG Hoffenheim",
+        "price": 1.775,
+        "point": 0.5
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.06,
+        "point": 3.25
+       },
+       {
+        "name": "Under",
+        "price": 1.794,
+        "point": 3.25
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640262047",
+  "commence_time": "2026-11-29T14:30:00Z",
+  "home_team": "SC Freiburg",
+  "away_team": "RB Leipzig",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "SC Freiburg",
+        "price": 2.14,
+        "point": 0.0
+       },
+       {
+        "name": "RB Leipzig",
+        "price": 1.794,
+        "point": -0.0
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.02,
+        "point": 3.25
+       },
+       {
+        "name": "Under",
+        "price": 1.877,
+        "point": 3.25
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640973263",
+  "commence_time": "2026-12-05T14:30:00Z",
+  "home_team": "Augsburg",
+  "away_team": "1. FC Köln",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Augsburg",
+        "price": 1.87,
+        "point": -0.25
+       },
+       {
+        "name": "1. FC Köln",
+        "price": 1.98,
+        "point": 0.25
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.909,
+        "point": 3.25
+       },
+       {
+        "name": "Under",
+        "price": 1.926,
+        "point": 3.25
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640260143",
+  "commence_time": "2026-11-28T14:30:00Z",
+  "home_team": "1. FC Köln",
+  "away_team": "Elversberg",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "1. FC Köln",
+        "price": 2.05,
+        "point": -0.5
+       },
+       {
+        "name": "Elversberg",
+        "price": 1.862,
+        "point": 0.5
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.04,
+        "point": 3.0
+       },
+       {
+        "name": "Under",
+        "price": 1.862,
+        "point": 3.0
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640258944",
+  "commence_time": "2026-11-29T16:30:00Z",
+  "home_team": "TSG Hoffenheim",
+  "away_team": "Augsburg",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "TSG Hoffenheim",
+        "price": 1.885,
+        "point": -0.75
+       },
+       {
+        "name": "Augsburg",
+        "price": 2.02,
+        "point": 0.75
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.04,
+        "point": 3.75
+       },
+       {
+        "name": "Under",
+        "price": 1.862,
+        "point": 3.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640951533",
+  "commence_time": "2026-12-06T14:30:00Z",
+  "home_team": "FC Schalke 04",
+  "away_team": "Borussia Dortmund",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "FC Schalke 04",
+        "price": 1.901,
+        "point": 0.75
+       },
+       {
+        "name": "Borussia Dortmund",
+        "price": 1.952,
+        "point": -0.75
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.0,
+        "point": 3.0
+       },
+       {
+        "name": "Under",
+        "price": 1.847,
+        "point": 3.0
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640973581",
+  "commence_time": "2026-12-05T14:30:00Z",
+  "home_team": "Bayer Leverkusen",
+  "away_team": "Borussia Monchengladbach",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Bayer Leverkusen",
+        "price": 1.917,
+        "point": -1.75
+       },
+       {
+        "name": "Borussia Monchengladbach",
+        "price": 1.917,
+        "point": 1.75
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.943,
+        "point": 3.75
+       },
+       {
+        "name": "Under",
+        "price": 1.877,
+        "point": 3.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640258945",
+  "commence_time": "2026-11-28T14:30:00Z",
+  "home_team": "FSV Mainz 05",
+  "away_team": "Union Berlin",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "FSV Mainz 05",
+        "price": 2.04,
+        "point": -1.25
+       },
+       {
+        "name": "Union Berlin",
+        "price": 1.87,
+        "point": 1.25
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.901,
+        "point": 3.0
+       },
+       {
+        "name": "Under",
+        "price": 1.99,
+        "point": 3.0
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640941335",
+  "commence_time": "2026-12-06T16:30:00Z",
+  "home_team": "Elversberg",
+  "away_team": "VfB Stuttgart",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Elversberg",
+        "price": 2.03,
+        "point": 0.5
+       },
+       {
+        "name": "VfB Stuttgart",
+        "price": 1.833,
+        "point": -0.5
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.901,
+        "point": 3.5
+       },
+       {
+        "name": "Under",
+        "price": 1.935,
+        "point": 3.5
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640260148",
+  "commence_time": "2026-11-28T14:30:00Z",
+  "home_team": "SC Paderborn",
+  "away_team": "FC Schalke 04",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "SC Paderborn",
+        "price": 1.962,
+        "point": 0.0
+       },
+       {
+        "name": "FC Schalke 04",
+        "price": 1.943,
+        "point": -0.0
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.84,
+        "point": 2.75
+       },
+       {
+        "name": "Under",
+        "price": 2.06,
+        "point": 2.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640260144",
+  "commence_time": "2026-11-28T17:30:00Z",
+  "home_team": "VfB Stuttgart",
+  "away_team": "Eintracht Frankfurt",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "VfB Stuttgart",
+        "price": 2.02,
+        "point": -0.75
+       },
+       {
+        "name": "Eintracht Frankfurt",
+        "price": 1.893,
+        "point": 0.75
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.909,
+        "point": 3.75
+       },
+       {
+        "name": "Under",
+        "price": 1.98,
+        "point": 3.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640260145",
+  "commence_time": "2026-11-29T18:30:00Z",
+  "home_team": "Borussia Dortmund",
+  "away_team": "Bayer Leverkusen",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Borussia Dortmund",
+        "price": 1.935,
+        "point": -0.25
+       },
+       {
+        "name": "Bayer Leverkusen",
+        "price": 1.971,
+        "point": 0.25
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.98,
+        "point": 3.25
+       },
+       {
+        "name": "Under",
+        "price": 1.909,
+        "point": 3.25
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640973264",
+  "commence_time": "2026-12-05T14:30:00Z",
+  "home_team": "Union Berlin",
+  "away_team": "Hamburger SV",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Union Berlin",
+        "price": 1.893,
+        "point": 0.0
+       },
+       {
+        "name": "Hamburger SV",
+        "price": 1.962,
+        "point": -0.0
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.877,
+        "point": 2.75
+       },
+       {
+        "name": "Under",
+        "price": 1.962,
+        "point": 2.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640941334",
+  "commence_time": "2026-12-05T17:30:00Z",
+  "home_team": "Eintracht Frankfurt",
+  "away_team": "Werder Bremen",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T08:41:13Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Eintracht Frankfurt",
+        "price": 2.1,
+        "point": -0.5
+       },
+       {
+        "name": "Werder Bremen",
+        "price": 1.775,
+        "point": 0.5
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T08:41:13Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.833,
+        "point": 3.25
+       },
+       {
+        "name": "Under",
+        "price": 2.01,
+        "point": 3.25
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]
