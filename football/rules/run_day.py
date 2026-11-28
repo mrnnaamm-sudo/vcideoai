@@ -168,12 +168,12 @@ for r in J['RES']:
         return json.load(open(p))['fixtures']['allFixtures']['fixtures'] if os.path.exists(p) else []
     sh,sa=sched(fx(r['h']),kick,r['hn']),sched(fx(r['a']),kick,r['an'])
     NM={'Kyoto Sanga FC':'Kyoto Purple Sanga','Sanfrecce Hiroshima':'Hiroshima Sanfrecce FC','Shimizu S-Pulse':'Shimizu S Pulse','Fagiano Okayama FC':'Fagiano Okayama'}
-    P1=pin('j1/odds.json',NM.get(r['hn'],r['hn']),NM.get(r['an'],r['an'])); P2=pin('d28/odds2/soccer_japan_j_league.json',NM.get(r['hn'],r['hn']),NM.get(r['an'],r['an']))
+    P1=pin('j1/odds.json',NM.get(r['hn'],r['hn']),NM.get(r['an'],r['an'])); P2=pin(os.environ.get('J1_ODDS_MOI','d28/odds2/soccer_japan_j_league.json'),NM.get(r['hn'],r['hn']),NM.get(r['an'],r['an']))
     fl=J['CS'][str(row)]['F']
     for i,mk in enumerate(['hc','tot','cor','h1','chc']):
         x=r['ev'][mk]; s=best(x)
         BETS.append(dict(league='J1',tab='J1',row=row+i,mid=mid,mk=mk,x=x,s=s,H=r['H'],A=r['A'],names=([SH[r['hn']],r['hn']],[SH[r['an']],r['an']]),flags=fl,kv=r['kv'],
-            price_src=('Pinnacle 27/11 22:45' if mk in('hc','tot') else 'người dùng 27/11') if s['odds'] else None,
+            price_src=(os.environ.get('J1_GIA_NHAN','Pinnacle 27/11 22:45') if mk in('hc','tot') else 'người dùng 27/11') if s['odds'] else None,
             move=moved(P1,P2,mk,s['side']) if mk in('hc','tot') else None,elo=tuple(r['elo']),sched=(sh,sa),lineup=(LH,LA),card=None,
             time=r['time'],lab=f"{r['hn']} (Nhà) – {r['an']} (Khách)",hn=SH[r['hn']],an=SH[r['an']],tinh_chat=dict(TC.get(mid,{}),derby=TC.get(mid,{}).get('derby') or is_derby(r['hn'],r['an']))))
 # ================= CHẤM =================
@@ -200,7 +200,7 @@ from gen3 import line_text,f2,pc,sg,lg
 from corner_style import verdict_flags
 SER=46354
 NM={'hc':'Chấp bàn FT','tot':'Tài/Xỉu bàn FT','cor':'Góc FT','h1':'Góc H1','card':'Thẻ FT (vàng + 2×đỏ)','chc':'Chấp góc FT'}
-SRC={'J1':'FotMob 10 trận gần nhất (J1 + ACL Elite) • Pinnacle 27/11 22:45 (Odds API) • giá góc/chấp góc: người dùng 27/11 • Elo ước tính từ BXH • Football LAB',
+SRC={'J1':'FotMob 10 trận gần nhất (J1 + ACL Elite) • '+os.environ.get('J1_GIA_NGUON','Pinnacle 27/11 22:45 (Odds API)')+' • giá góc/chấp góc: người dùng 27/11 • Elo ước tính từ BXH • Football LAB',
      'EU':'ESPN/FotMob 10 trận gần nhất (VĐQG + cúp châu Âu) • Pinnacle 27/11 22:45 (Odds API) • giá góc/thẻ/chấp góc: người dùng 27/11 • ClubElo • FotMob (đội hình, lối đá, trọng tài)'}
 def full_names(lab): a,b=lab.split(' – '); return a.replace(' (Nhà)',''),b.replace(' (Khách)','')
 def chk(steps): return ' • Đã kiểm quy chuẩn: '+'; '.join(f"{m} {'→ '+d if d else ('= '+k.replace('tier ','') if m=='8' else '✓')}" for m,k,d in steps)
