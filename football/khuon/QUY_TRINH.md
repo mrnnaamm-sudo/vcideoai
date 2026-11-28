@@ -27,6 +27,7 @@ Ra: `results/engine_<dd-mm>.json`, `results/sheet_engine_<dd-mm>.json`, `results
 ## Bước 3 – Ghi sheet + bước kiểm + báo kèo
 1. Ghi đúng từng vùng trong `ke_hoach_ghi_<dd-mm>.json` (update_values; ô `null` bỏ qua). Không ghi cột AZ:BA, không ghi khung A–H.
    **Tab J1 – khối phong độ 10 trận (cột L lọc theo B1):** `python3 -B khuon/phong_do.py J1 <YYYY-MM-DD> results/phong_do_J1_<dd-mm>.json` → ghi nối tiếp vào `BP2300:CO2519` ngay sau dòng cuối đã có (BP = số ngày); khối trọng tài ghi nối tiếp `BP2520:BZ2560` (chưa công bố → 'Chưa công bố', kèo thẻ tối đa C). Đầy vùng → nới phạm vi FILTER ở L5, không ghi đè ngày cũ.
+   **Ô chọn ngày B1 (mọi tab):** ngày mới phân tích phải có trong danh sách thả xuống của B1 (setDataValidation ONE_OF_LIST, dạng dd/mm/yyyy, giữ các ngày cũ) – thiếu thì thêm ngay khi ghi sheet.
 2. Đọc ngược `AW150:AW399` → `python3 khuon/doc_sheet.py aw <vào> <aw.json>` → `A1_META=results/a1_meta.json python3 -B rules/audit.py results/sheet_engine_<dd-mm>.json <aw.json>`.
 3. **Chỉ báo kèo khi ĐẠT 0 lỗi**: TOP 1–2 mỗi khung giờ, Ưu tiên mỗi trận, kèo KHÔNG VÀO; nói rõ kèo nào đang chờ giá.
 4. Chốt 1 tiếng trước mỗi khung giờ (mục 6, 27f): lấy đội hình chính thức (FotMob tự cập nhật) + giá mới → chạy lại Bước 2–3 cho khung đó (`--tran`). Không chỉnh tier tay.
