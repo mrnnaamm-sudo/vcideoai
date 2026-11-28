@@ -39,7 +39,7 @@ def moved(o1,o2,mk,side):
         back=(l2-l1<=-0.25) if side==0 else (l2-l1>=0.25)   # Tài: mốc giảm là ngược; Xỉu: mốc tăng là ngược
     p1,p2=(a1,a2) if side==0 else (b1,b2)
     up=(l1==l2) and p2>=p1*1.05
-    return dict(back=back or up,txt=f"Pinnacle 20:40 → 22:45: mốc {l1:g} → {l2:g}, giá cửa chọn {p1} → {p2}")
+    return dict(back=back or up,txt=f"Pinnacle {os.environ.get('EU_GIA_MOC','20:40 → 22:45')}: mốc {l1:g} → {l2:g}, giá cửa chọn {p1} → {p2}")
 # ---------- mục 23: lịch thi đấu ----------
 TC=json.load(open(f'rules/tinh_chat_{DAYK}.json')) if os.path.exists(f'rules/tinh_chat_{DAYK}.json') else {}
 DERBY=json.load(open('rules/derby.json'))
@@ -104,7 +104,7 @@ for tab,row,time,lab,h,a,hn,an,hc,tt,cr,cd,ref,fid in M:
     fh,fa=str(n['homeTeam']['id']),str(n['awayTeam']['id']); fhn,fan=n['homeTeam']['name'],n['awayTeam']['name']
     kick=n['matchTimeUTCDate'] if 'matchTimeUTCDate' in n else n.get('matchTimeUTC')
     eh=E.get(MP.get(T28[fh])); ea=E.get(MP.get(T28[fa]))
-    P1=pin(f'd28/odds/{SPORT[tab]}.json',fhn,fan); P2=pin(f'd28/odds2/{SPORT[tab]}.json',fhn,fan)
+    P1=pin(os.environ.get(f'EU_GIA_TRUOC_{tab}',f'd28/odds/{SPORT[tab]}.json'),fhn,fan); P2=pin(os.environ.get(f'EU_GIA_MOI_{tab}',f'd28/odds2/{SPORT[tab]}.json'),fhn,fan)   # lượt chốt: giá mới qua biến môi trường (QUY_TRINH – tự chuyển nguồn)
     od={'hc':(P2 or P1)['hc'],'tot':(P2 or P1)['tot']}
     U=UO.get(tab,{}).get(str(row))
     if U:
@@ -132,7 +132,7 @@ for tab,row,time,lab,h,a,hn,an,hc,tt,cr,cd,ref,fid in M:
         x=ev[mk]; s=best(x)
         rw=row+i if mk!='chc' else chrow
         BETS.append(dict(league=tab,tab=tab,row=rw,mid=mid,mk=mk,x=x,s=s,H=H,A=A,names=([hn,fhn],[an,fan]),flags=fl,kv=kv,
-            price_src=('Pinnacle 27/11 22:45' if mk in('hc','tot') else 'người dùng 27/11') if s['odds'] else None,
+            price_src=(os.environ.get(f'EU_GIA_NHAN_{tab}','Pinnacle 27/11 22:45') if mk in('hc','tot') else 'người dùng 27/11') if s['odds'] else None,
             move=moved(P1,P2,mk,s['side']) if mk in('hc','tot') else None,elo=(eh[1],ea[1]),sched=(sh,sa),lineup=(LH,LA),
             card=dict(ref=rr,kv_card=kv.get('card'),elo=(eh[1],ea[1]),big=(eh[1]>=1800 and ea[1]>=1800),pl=(tab=='PL')),
             time=time,lab=lab,hn=hn,an=an,od=od,tinh_chat=dict(TC.get(mid,{}),derby=TC.get(mid,{}).get('derby') or is_derby(fhn,fan))))
@@ -201,7 +201,7 @@ from corner_style import verdict_flags
 SER=46354
 NM={'hc':'Chấp bàn FT','tot':'Tài/Xỉu bàn FT','cor':'Góc FT','h1':'Góc H1','card':'Thẻ FT (vàng + 2×đỏ)','chc':'Chấp góc FT'}
 SRC={'J1':'FotMob 10 trận gần nhất (J1 + ACL Elite) • '+os.environ.get('J1_GIA_NGUON','Pinnacle 27/11 22:45 (Odds API)')+' • giá góc/chấp góc: người dùng 27/11 • Elo ước tính từ BXH • Football LAB',
-     'EU':'ESPN/FotMob 10 trận gần nhất (VĐQG + cúp châu Âu) • Pinnacle 27/11 22:45 (Odds API) • giá góc/thẻ/chấp góc: người dùng 27/11 • ClubElo • FotMob (đội hình, lối đá, trọng tài)'}
+     'EU':'ESPN/FotMob 10 trận gần nhất (VĐQG + cúp châu Âu) • '+os.environ.get('EU_GIA_NGUON','Pinnacle 27/11 22:45 (Odds API)')+' • giá góc/thẻ/chấp góc: người dùng 27/11 • ClubElo • FotMob (đội hình, lối đá, trọng tài)'}
 def full_names(lab): a,b=lab.split(' – '); return a.replace(' (Nhà)',''),b.replace(' (Khách)','')
 def chk(steps): return ' • Đã kiểm quy chuẩn: '+'; '.join(f"{m} {'→ '+d if d else ('= '+k.replace('tier ','') if m=='8' else '✓')}" for m,k,d in steps)
 def vn_num(t): return re.sub(r'(\d)\.(\d)',r'\1,\2',t) if isinstance(t,str) else t
