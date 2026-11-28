@@ -1,0 +1,80 @@
+{
+ "Kashima Antlers": {
+  "vao": [
+   "Kaito Chida",
+   "Aleksandar Čavrić"
+  ],
+  "ra": [
+   "Ikuma Sekigawa",
+   "Yuma Suzuki"
+  ],
+  "rel": {
+   "att": 1.1206147930762853,
+   "def": 1.0101095841314207,
+   "all": 1.0682408459787445
+  }
+ },
+ "Fagiano Okayama FC": {
+  "vao": [
+   "Masaya Matsumoto",
+   "Ibuki Fujita",
+   "Oberdan",
+   "Kota Kawano",
+   "Noah Kenshin Browne"
+  ],
+  "ra": [
+   "Soichiro Mori",
+   "Eiji Miyamoto",
+   "Ataru Esaka",
+   "Towa Yamane",
+   "Lucão"
+  ],
+  "rel": {
+   "att": 1.1402046818414369,
+   "def": 0.8198714129799943,
+   "all": 1.0260551748328863
+  }
+ },
+ "Vissel Kobe": {
+  "vao": [
+   "Nanasei Iino",
+   "Takuya Iwanami",
+   "Yuan Iwamoto",
+   "Anderson Lopes"
+  ],
+  "ra": [
+   "Tetsushi Yamakawa",
+   "Gotoku Sakai",
+   "Yuya Kuwasaki",
+   "Yoshinori Muto"
+  ],
+  "rel": {
+   "att": 0.9039556733251339,
+   "def": 0.9882358742187736,
+   "all": 0.9392048949794048
+  }
+ },
+ "JEF United Chiba": {
+  "vao": [
+   "Rikuto Ishio",
+   "Koji Toriumi",
+   "Takashi Kawano",
+   "Takahiro Iida",
+   "Kazuki Tanaka",
+   "Daichi Ishikawa"
+  ],
+  "ra": [
+   "Boniface Nduka",
+   "Masaru Hidaka",
+   "Daisuke Suzuki",
+   "Takumi Tsukui",
+   "Takayuki Mae",
+   "Ken Yamura"
+  ],
+  "rel": {
+   "att": 1.023106051355467,
+   "def": 1.080370143950564,
+   "all": 1.0448242811382038
+  }
+ }
+}

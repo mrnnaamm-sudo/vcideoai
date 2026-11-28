@@ -1,45 +1,93 @@
 [
  {
-  "id": "1640861013",
-  "commence_time": "2026-11-28T06:00:00Z",
-  "home_team": "Kashima Antlers",
-  "away_team": "Fagiano Okayama",
+  "id": "1640850494",
+  "commence_time": "2026-11-28T05:00:00Z",
+  "home_team": "Shimizu S Pulse",
+  "away_team": "Urawa Red Diamonds",
   "nguon": "pinnacle.com (guest arcadia)",
   "bookmakers": [
    {
     "key": "pinnacle",
     "title": "Pinnacle",
-    "last_update": "2026-11-28T04:20:20Z",
+    "last_update": "2026-11-28T05:06:26Z",
     "markets": [
      {
       "key": "spreads",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
-        "name": "Kashima Antlers",
-        "price": 1.971,
-        "point": -0.75
+        "name": "Shimizu S Pulse",
+        "price": 1.935,
+        "point": 0.25
        },
        {
-        "name": "Fagiano Okayama",
-        "price": 1.935,
-        "point": 0.75
+        "name": "Urawa Red Diamonds",
+        "price": 1.971,
+        "point": -0.25
        }
       ]
      },
      {
       "key": "totals",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
         "name": "Over",
-        "price": 1.917,
+        "price": 2.06,
         "point": 2.5
        },
        {
         "name": "Under",
-        "price": 1.971,
+        "price": 1.84,
         "point": 2.5
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640935580",
+  "commence_time": "2026-11-29T05:00:00Z",
+  "home_team": "Mito HollyHock",
+  "away_team": "V-Varen Nagasaki",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T05:06:26Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T05:06:26Z",
+      "outcomes": [
+       {
+        "name": "Mito HollyHock",
+        "price": 1.98,
+        "point": 0.0
+       },
+       {
+        "name": "V-Varen Nagasaki",
+        "price": 1.893,
+        "point": -0.0
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T05:06:26Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 1.833,
+        "point": 2.25
+       },
+       {
+        "name": "Under",
+        "price": 2.03,
+        "point": 2.25
        }
       ]
      }
@@ -57,36 +105,36 @@
    {
     "key": "pinnacle",
     "title": "Pinnacle",
-    "last_update": "2026-11-28T04:20:20Z",
+    "last_update": "2026-11-28T05:06:26Z",
     "markets": [
      {
       "key": "spreads",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
         "name": "Kyoto Purple Sanga",
-        "price": 2.1,
-        "point": -0.25
+        "price": 1.82,
+        "point": 0.0
        },
        {
         "name": "Cerezo Osaka",
-        "price": 1.826,
-        "point": 0.25
+        "price": 2.1,
+        "point": -0.0
        }
       ]
      },
      {
       "key": "totals",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
         "name": "Over",
-        "price": 1.962,
+        "price": 2.02,
         "point": 2.75
        },
        {
         "name": "Under",
-        "price": 1.926,
+        "price": 1.877,
         "point": 2.75
        }
       ]
@@ -105,11 +153,11 @@
    {
     "key": "pinnacle",
     "title": "Pinnacle",
-    "last_update": "2026-11-28T04:20:20Z",
+    "last_update": "2026-11-28T05:06:26Z",
     "markets": [
      {
       "key": "spreads",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
         "name": "Kawasaki Frontale",
@@ -125,7 +173,7 @@
      },
      {
       "key": "totals",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
         "name": "Over",
@@ -144,142 +192,46 @@
   ]
  },
  {
-  "id": "1640935580",
-  "commence_time": "2026-11-29T05:00:00Z",
-  "home_team": "Mito HollyHock",
-  "away_team": "V-Varen Nagasaki",
+  "id": "1640861013",
+  "commence_time": "2026-11-28T06:00:00Z",
+  "home_team": "Kashima Antlers",
+  "away_team": "Fagiano Okayama",
   "nguon": "pinnacle.com (guest arcadia)",
   "bookmakers": [
    {
     "key": "pinnacle",
     "title": "Pinnacle",
-    "last_update": "2026-11-28T04:20:20Z",
+    "last_update": "2026-11-28T05:06:26Z",
     "markets": [
      {
       "key": "spreads",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
-        "name": "Mito HollyHock",
-        "price": 1.98,
-        "point": 0.0
-       },
-       {
-        "name": "V-Varen Nagasaki",
-        "price": 1.893,
-        "point": -0.0
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T04:20:20Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 1.833,
-        "point": 2.25
-       },
-       {
-        "name": "Under",
-        "price": 2.03,
-        "point": 2.25
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640850494",
-  "commence_time": "2026-11-28T05:00:00Z",
-  "home_team": "Shimizu S Pulse",
-  "away_team": "Urawa Red Diamonds",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T04:20:20Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T04:20:20Z",
-      "outcomes": [
-       {
-        "name": "Shimizu S Pulse",
-        "price": 1.87,
-        "point": 0.5
-       },
-       {
-        "name": "Urawa Red Diamonds",
-        "price": 2.05,
-        "point": -0.5
-       }
-      ]
-     },
-     {
-      "key": "totals",
-      "last_update": "2026-11-28T04:20:20Z",
-      "outcomes": [
-       {
-        "name": "Over",
-        "price": 2.04,
-        "point": 2.5
-       },
-       {
-        "name": "Under",
-        "price": 1.855,
-        "point": 2.5
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "1640935707",
-  "commence_time": "2026-11-29T05:00:00Z",
-  "home_team": "Yokohama F Marinos",
-  "away_team": "FC Tokyo",
-  "nguon": "pinnacle.com (guest arcadia)",
-  "bookmakers": [
-   {
-    "key": "pinnacle",
-    "title": "Pinnacle",
-    "last_update": "2026-11-28T04:20:20Z",
-    "markets": [
-     {
-      "key": "spreads",
-      "last_update": "2026-11-28T04:20:20Z",
-      "outcomes": [
-       {
-        "name": "Yokohama F Marinos",
-        "price": 1.971,
-        "point": 0.75
-       },
-       {
-        "name": "FC Tokyo",
-        "price": 1.901,
+        "name": "Kashima Antlers",
+        "price": 1.917,
         "point": -0.75
+       },
+       {
+        "name": "Fagiano Okayama",
+        "price": 1.99,
+        "point": 0.75
        }
       ]
      },
      {
       "key": "totals",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
         "name": "Over",
-        "price": 2.02,
-        "point": 2.75
+        "price": 1.901,
+        "point": 2.5
        },
        {
         "name": "Under",
-        "price": 1.84,
-        "point": 2.75
+        "price": 1.99,
+        "point": 2.5
        }
       ]
      }
@@ -297,11 +249,11 @@
    {
     "key": "pinnacle",
     "title": "Pinnacle",
-    "last_update": "2026-11-28T04:20:20Z",
+    "last_update": "2026-11-28T05:06:26Z",
     "markets": [
      {
       "key": "spreads",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
         "name": "FC Machida Zelvia",
@@ -317,7 +269,7 @@
      },
      {
       "key": "totals",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
         "name": "Over",
@@ -336,46 +288,46 @@
   ]
  },
  {
-  "id": "1640861014",
-  "commence_time": "2026-11-28T06:00:00Z",
-  "home_team": "Vissel Kobe",
-  "away_team": "JEF United Chiba",
+  "id": "1640938471",
+  "commence_time": "2026-11-29T06:00:00Z",
+  "home_team": "Nagoya Grampus",
+  "away_team": "Avispa Fukuoka",
   "nguon": "pinnacle.com (guest arcadia)",
   "bookmakers": [
    {
     "key": "pinnacle",
     "title": "Pinnacle",
-    "last_update": "2026-11-28T04:20:20Z",
+    "last_update": "2026-11-28T05:06:26Z",
     "markets": [
      {
       "key": "spreads",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
-        "name": "Vissel Kobe",
-        "price": 2.0,
-        "point": -1.0
+        "name": "Nagoya Grampus",
+        "price": 1.84,
+        "point": -0.5
        },
        {
-        "name": "JEF United Chiba",
-        "price": 1.909,
-        "point": 1.0
+        "name": "Avispa Fukuoka",
+        "price": 2.04,
+        "point": 0.5
        }
       ]
      },
      {
       "key": "totals",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
         "name": "Over",
-        "price": 2.03,
-        "point": 2.75
+        "price": 1.813,
+        "point": 2.25
        },
        {
         "name": "Under",
-        "price": 1.87,
-        "point": 2.75
+        "price": 2.06,
+        "point": 2.25
        }
       ]
      }
@@ -393,36 +345,36 @@
    {
     "key": "pinnacle",
     "title": "Pinnacle",
-    "last_update": "2026-11-28T04:20:20Z",
+    "last_update": "2026-11-28T05:06:26Z",
     "markets": [
      {
       "key": "spreads",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
         "name": "Kashiwa Reysol",
-        "price": 1.833,
-        "point": 0.25
+        "price": 1.962,
+        "point": 0.0
        },
        {
         "name": "Hiroshima Sanfrecce FC",
-        "price": 2.09,
-        "point": -0.25
+        "price": 1.943,
+        "point": -0.0
        }
       ]
      },
      {
       "key": "totals",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
         "name": "Over",
-        "price": 1.87,
+        "price": 1.855,
         "point": 2.75
        },
        {
         "name": "Under",
-        "price": 2.02,
+        "price": 2.04,
         "point": 2.75
        }
       ]
@@ -432,46 +384,94 @@
   ]
  },
  {
-  "id": "1640938471",
-  "commence_time": "2026-11-29T06:00:00Z",
-  "home_team": "Nagoya Grampus",
-  "away_team": "Avispa Fukuoka",
+  "id": "1640861014",
+  "commence_time": "2026-11-28T06:00:00Z",
+  "home_team": "Vissel Kobe",
+  "away_team": "JEF United Chiba",
   "nguon": "pinnacle.com (guest arcadia)",
   "bookmakers": [
    {
     "key": "pinnacle",
     "title": "Pinnacle",
-    "last_update": "2026-11-28T04:20:20Z",
+    "last_update": "2026-11-28T05:06:26Z",
     "markets": [
      {
       "key": "spreads",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
-        "name": "Nagoya Grampus",
-        "price": 1.84,
-        "point": -0.5
+        "name": "Vissel Kobe",
+        "price": 2.09,
+        "point": -1.0
        },
        {
-        "name": "Avispa Fukuoka",
-        "price": 2.04,
-        "point": 0.5
+        "name": "JEF United Chiba",
+        "price": 1.833,
+        "point": 1.0
        }
       ]
      },
      {
       "key": "totals",
-      "last_update": "2026-11-28T04:20:20Z",
+      "last_update": "2026-11-28T05:06:26Z",
       "outcomes": [
        {
         "name": "Over",
-        "price": 1.813,
-        "point": 2.25
+        "price": 2.05,
+        "point": 2.75
        },
        {
         "name": "Under",
-        "price": 2.06,
-        "point": 2.25
+        "price": 1.847,
+        "point": 2.75
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1640935707",
+  "commence_time": "2026-11-29T05:00:00Z",
+  "home_team": "Yokohama F Marinos",
+  "away_team": "FC Tokyo",
+  "nguon": "pinnacle.com (guest arcadia)",
+  "bookmakers": [
+   {
+    "key": "pinnacle",
+    "title": "Pinnacle",
+    "last_update": "2026-11-28T05:06:26Z",
+    "markets": [
+     {
+      "key": "spreads",
+      "last_update": "2026-11-28T05:06:26Z",
+      "outcomes": [
+       {
+        "name": "Yokohama F Marinos",
+        "price": 1.971,
+        "point": 0.75
+       },
+       {
+        "name": "FC Tokyo",
+        "price": 1.901,
+        "point": -0.75
+       }
+      ]
+     },
+     {
+      "key": "totals",
+      "last_update": "2026-11-28T05:06:26Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "price": 2.02,
+        "point": 2.75
+       },
+       {
+        "name": "Under",
+        "price": 1.84,
+        "point": 2.75
        }
       ]
      }
