@@ -1,0 +1,78 @@
+{
+ "Kyoto Sanga FC": {
+  "vao": [
+   "Gakuji Ota",
+   "Yoshinori Suzuki",
+   "Takumi Kato"
+  ],
+  "ra": [
+   "Halls",
+   "Sung-Jun Yoon",
+   "Alex Negueba"
+  ],
+  "rel": {
+   "att": 1.0327810829922826,
+   "def": 1.0785609788860036,
+   "all": 1.0513308686844798
+  }
+ },
+ "Cerezo Osaka": {
+  "vao": [
+   "Koto Abe",
+   "Shinnosuke Hatanaka",
+   "Reiya Sakata",
+   "Yota Komi",
+   "Thiago"
+  ],
+  "ra": [
+   "Kosuke Nakamura",
+   "Ayumu Ohata",
+   "Dion Cools",
+   "Yumeki Yokoyama",
+   "Solomon Sakuragawa"
+  ],
+  "rel": {
+   "att": 1.10709464152349,
+   "def": 1.0073824936420095,
+   "all": 1.066371076061285
+  }
+ },
+ "Shimizu S-Pulse": {
+  "vao": [
+   "Tomoya Fujii",
+   "Koya Kitagawa"
+  ],
+  "ra": [
+   "Ryo Germain",
+   "Kai Matsuzaki"
+  ],
+  "rel": {
+   "att": 1.0916255005443074,
+   "def": 1.036346274398086,
+   "all": 1.067105168417639
+  }
+ },
+ "Urawa Red Diamonds": {
+  "vao": [
+   "Eiichi Katayama",
+   "Kota Kudo",
+   "Kaito Yasui",
+   "Hayate Ueki",
+   "Yoichi Naganuma",
+   "Harumi Minamino"
+  ],
+  "ra": [
+   "Yuta Miyamoto",
+   "Danilo Boza",
+   "Miki Yamane",
+   "Tatsuki Seko",
+   "Ryoma Watanabe",
+   "Hiiro Komori"
+  ],
+  "rel": {
+   "att": 0.888157431468366,
+   "def": 0.8436309293249715,
+   "all": 0.8723709812479816
+  }
+ }
+}
