@@ -10,6 +10,7 @@ Mã giải: PL, LL, BL, J1, CL, EL (khai báo ở `khuon/giai.py`; giải mới 
 2. Mọi lệnh dưới đây chạy với `A1_META=results/a1_meta.json`. Lệch → bộ chạy tự DỪNG và báo; báo ngay người dùng, không phân tích.
 
 ## Bước 1 – Lên kế hoạch
+0. Elo (mục 25): `python3 khuon/elo_moi.py` – cập nhật ClubElo mỗi ngày phân tích (đọc bảng toàn cầu trên clubelo.com vì api.clubelo.com bị ngắt ở proxy). Đội chưa khớp tên → bộ chạy dừng và chỉ tên cần thêm vào `khuon/elo_alias.json`.
 1. Giá: chấp/tài xỉu bàn chỉ lấy **Pinnacle** (Odds API, mục 6) → lưu `khuon/gia/<YYYY-MM-DD>/pinnacle_<mã odds>.json`; lần lấy trước (nếu có) đổi tên `..._truoc.json` (mục 14(1)). Odds API có hạn mức – kiểm `x-requests-remaining` (gọi /v4/sports không tốn lượt).
 2. Giá người dùng gửi (góc FT, góc H1, thẻ, chấp góc) → `khuon/gia/<ngày>/nguoi_dung.json`:
    `{"PL": {"Arsenal – Manchester City": {"cor": [10.5, 1.90, 1.90], "h1": [4.5, 1.85, 1.95], "card": [4.5, 1.80, 2.00], "chc": [-1.5, 1.95, 1.85]}}}` (mốc chấp góc theo đội nhà; cách đọc kèo người dùng theo mục 30a).
