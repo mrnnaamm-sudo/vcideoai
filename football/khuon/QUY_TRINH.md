@@ -38,7 +38,7 @@ python3 -B khuon/ket_qua.py --ngay <YYYY-MM-DD> [--giai PL]
 ```
 1. Ghi `results/ke_hoach_ket_qua_<dd-mm>.json` (cột AZ 'Thực tế', BA 'Kết quả'). Trận chưa đủ số liệu → 'Chờ số liệu', đặt lịch kiểm lại.
 2. Kèo người dùng đã vào thật (tab 'Kèo đã vào'): ghi J (Kết quả), K (diễn biến), L (giờ cập nhật).
-3. Cập nhật bản tóm tắt tab 'Tổng kết RR tuần' (vùng N200, 7 phần, ngắn gọn; thẻ RR riêng – mục 29).
+3. RR theo ngày chỉ ghi ở các tab kèo (cột AZ/BA và bảng RR của tab). **KHÔNG cập nhật tab 'Tổng kết RR tuần' sau mỗi lượt chấm** (người dùng 28/11 – tốn token): tab này chỉ tổng kết **1 lần/tuần** ở buổi rà soát cuối tuần (vùng N200, 7 phần, ngắn gọn; thẻ RR riêng – mục 29).
 
 ## Bước 5 – Rút bài học (mục 0k)
 1. Xem `ung_vien_bai_hoc` trong `results/ket_qua_<dd-mm>.json` (nhóm |z| ≥ 1,5; kèo Ưu tiên/TOP thua).
