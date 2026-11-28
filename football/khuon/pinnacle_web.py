@@ -34,5 +34,11 @@ def main(ma,out,ref=None):
                 mk.append(dict(key='totals',last_update=now,outcomes=[dict(name='Over',price=dec(pr['over']['price']),point=pr['over']['points']),dict(name='Under',price=dec(pr['under']['price']),point=pr['under']['points'])]))
         ev.append(dict(id=str(m['id']),commence_time=m['startTime'],home_team=H,away_team=A,nguon='pinnacle.com (guest arcadia)',
                        bookmakers=[dict(key='pinnacle',title='Pinnacle',last_update=now,markets=mk)]))
+    # trận đã bắt đầu không còn trên Pinnacle → giữ giá chốt cuối từ lần lấy trước (cùng tệp), không để mất giá
+    import os
+    if os.path.exists(out):
+        co={(e['home_team'],e['commence_time']) for e in ev}
+        for e in json.load(open(out)):
+            if (e['home_team'],e['commence_time']) not in co: e['giu_gia_truoc']=True; ev.append(e)
     json.dump(ev,open(out,'w'),ensure_ascii=False,indent=1); print(len(ev),'trận →',out,'lúc',now)
 if __name__=='__main__': main(*sys.argv[1:])

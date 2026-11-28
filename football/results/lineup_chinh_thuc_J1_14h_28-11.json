@@ -1,0 +1,32 @@
+{
+ "Kashiwa Reysol": {
+  "vao": [
+   "Yusei Yamanouchi",
+   "Sachiro Toshima"
+  ],
+  "ra": [
+   "Wataru Harada",
+   "Keita Endo"
+  ],
+  "rel": {
+   "att": 1.098543985409563,
+   "def": 0.7994163903509972,
+   "all": 1.0020215510032793
+  }
+ },
+ "Sanfrecce Hiroshima": {
+  "vao": [
+   "Taishi Matsumoto",
+   "Sébastien Haller"
+  ],
+  "ra": [
+   "Hayao Kawabe",
+   "Shunki Higashi"
+  ],
+  "rel": {
+   "att": 0.916021085388211,
+   "def": 1.0719117283969968,
+   "all": 0.9557120009887464
+  }
+ }
+}
