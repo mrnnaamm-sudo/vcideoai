@@ -216,6 +216,8 @@ def base_of(b):
     return line_text(b['mk'],x,s,b['hn'],b['an'],kv)
 def reason_c(b):
     s=b['s']
+    ha=[f"hạ theo mục {m}" for m,k,d in b.get('steps',[]) if d in('C+','C') and m not in('15',)]
+    if ha and s['odds'] is not None and (s['ev'] or 0)>=0.02: return '; '.join(dict.fromkeys(ha))
     if s['odds'] is None: return 'chờ giá (mục 6: không tự đoán giá)'
     if s['evm'] is not None and s['evm']<=0: return 'mô hình ngược chiều'
     if s['pf'] and s['ps']<=s['pf']: return 'mẫu không nghiêng hơn thị trường'
@@ -263,7 +265,7 @@ for mid,bs in MATCH.items():
             core=base+(' • tier B dự phòng (trận đã đủ 2 ưu tiên)' if b.get('dp') else '')
         elif t=='C+': pre.append('C+ • ½R'); core=base+f" • mẫu (co về thị trường) {pc(s['psa'])}, giá ≥ 1,65 (mục 18b)"
         else: core=base+' • '+reason_c(b)+' • C • không vào'
-        ay=' • '.join(pre+[core]+notes)+chk(b['steps'])+'.'
+        ay=' • '.join(pre+[core]+notes)+chk(b['steps'])+(f" • [Thử mục 8 (a)(b); tier cách cũ: {b['t_old']}]" if b.get('t_old') and b['mk']!='card' else '')+'.'
         # danh sách kèo
         fh,fa=full_names(b['lab']); x=b['x']
         c1,c2=(fh,fa) if b['mk'] in('hc','chc') else ('Tài','Xỉu')

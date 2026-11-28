@@ -34,7 +34,7 @@ def st(b,m): return [z for z in G(b)['steps'] if z[0]==m]
 CASES=[
  ('8','Kèo chuẩn đủ điều kiện (EV ≥ 10%, EV mô hình ≥ 10%, lệch thị trường ≤ 12, mẫu nghiêng hơn thị trường) → A', lambda: T(bet())=='A'),
  ('8','EV 6% (≥ 5%), mô hình > 0 → B', lambda: T(bet(ev=0.06,evm=0.03))=='B'),
- ('8','Lệch thị trường > 12 điểm → tối đa B', lambda: T(bet(gap=0.15))=='B'),
+ ('8','Lệch thị trường > 8 điểm → tối đa C+ (rà soát 28/11)', lambda: T(bet(gap=0.15))=='C+'),
  ('8','Mẫu thô KHÔNG nghiêng hơn thị trường → không A/B', lambda: T(bet(ps=0.45))=='C'),
  ('8','Mô hình ngược chiều (EV mô hình < 0) → tối đa C', lambda: T(bet(evm=-0.02,ev=0.06))=='C'),
  ('8','C+: EV 3%, mẫu co ≥ hòa vốn +3, odds ≥ 1,65, mô hình cùng chiều → C+', lambda: T(bet(ev=0.03,evm=0.01,psa=0.54,odds=2.0))=='C+'),
@@ -96,7 +96,8 @@ CASES+=[
  ('14(8b)','Biên: đạt 50% (5/10) → không hạ', lambda: T(_tot(3,2))=='A'),
  ('8','Biên A: EV 10,01% → A; EV 9,99% → B', lambda: T(bet(ev=0.1001))=='A' and T(bet(ev=0.0999))=='B'),
  ('8','Biên A: EV mô hình 10,01% → A; 9,99% → B', lambda: T(bet(evm=0.1001))=='A' and T(bet(evm=0.0999))=='B'),
- ('8','Biên A: lệch thị trường 11,99 điểm → A; 12,01 → B', lambda: T(bet(gap=0.1199))=='A' and T(bet(gap=0.1201))=='B'),
+ ('8','Biên lệch thị trường: 7,99 điểm → giữ A; 8,01 điểm → C+', lambda: T(bet(gap=0.0799))=='A' and T(bet(gap=0.0801))=='C+'),
+ ('8','Biên lệch thị trường ở tier B: 8,01 điểm → C+; 7,99 → B', lambda: T(bet(ev=0.06,evm=0.03,gap=0.0801))=='C+' and T(bet(ev=0.06,evm=0.03,gap=0.0799))=='B'),
  ('8','Biên B: EV 5,01% → B; 4,99% → C+', lambda: T(bet(ev=0.0501,evm=0.03))=='B' and T(bet(ev=0.0499,evm=0.03))=='C+'),
  ('8','Biên C+: odds 1,65 → C+; 1,64 → C', lambda: T(bet(ev=0.03,evm=0.01,psa=0.65,ps=0.66,pf=0.6,odds=1.65,o2=2.3))=='C+' and T(bet(ev=0.03,evm=0.01,psa=0.65,ps=0.66,pf=0.6,odds=1.64,o2=2.3))=='C'),
  ('8','Biên C+: mẫu co ≥ hòa vốn + 3 điểm → C+; + 2 điểm → C', lambda: T(bet(ev=0.03,evm=0.01,psa=0.531))=='C+' and T(bet(ev=0.03,evm=0.01,psa=0.52))=='C'),
@@ -166,6 +167,36 @@ def _khong_doc_tab_ket_qua():
     from rules import a1_sync
     return not ({204,206}&set(a1_sync.TABS))
 CASES+=[('0(k)','Bộ máy không đọc tab Tổng kết RR tuần / Kèo đã vào và hai tab này không nằm trong danh sách tab kèo của A1', _khong_doc_tab_ket_qua)]
+
+def _w8():
+    """Mục 8(b): ước tính = 40% mô hình (ở đúng giá) + 30% mẫu đã co + 30% công bằng; thiếu giá cửa kia 55% mô hình + 45% mẫu; mẫu đã co = (mẫu + công bằng)/2."""
+    from model import evaluate,chc_eval
+    H=[_q(2,1,True,cf=6,ca=3,cor=9,h1=4,cards=4)]*5+[_q(1,1,True,cf=5,ca=5,cor=10,h1=5,cards=3)]*5
+    A=[_q(0,1,False,cf=4,ca=6,cor=10,h1=4,cards=5)]*5+[_q(2,2,False,cf=5,ca=5,cor=11,h1=5,cards=4)]*5
+    kv,ev=evaluate(H,A,{'hc':(-0.5,1.95,1.95),'tot':(2.5,1.90,2.00),'cor':(9.5,1.85,None)},None,(1700,1650),(None,None),(None,None),1.0)
+    ev['chc']=chc_eval(H,A,-1.5,1.90,1.90,kv)
+    ok=0
+    for mk,x in ev.items():
+        for s in x['sides']:
+            if not s['odds']: continue
+            pmg=(s['evm']+1)/s['odds']
+            if s['pf'] is not None:
+                if abs(s['psa']-(s['ps']+s['pf'])/2)>1e-9: return False
+                pe=0.4*pmg+0.3*s['psa']+0.3*s['pf']
+            else: pe=0.55*pmg+0.45*s['psa']
+            if abs(pe*s['odds']-1-s['ev'])>1e-9: return False
+            ok+=1
+    return ok>=6
+def _n8(n): b=bet(ev=0.03,evm=0.01,psa=0.54); b['s']['n']=n; return T(b)
+def _pri_goc():
+    a=dict(bet(ev=0.10),t='B',mk='hc'); c=dict(bet('cor',line=9.5,ev=0.085),t='B')
+    engine.rank({'m':[a,c]},{'m':'20:00'}); return c.get('pri')==1 and a.get('pri')==2
+CASES+=[
+ ('8','Trọng số ước tính 40/30/30 (thiếu giá cửa kia 55/45) và mẫu đã co = (mẫu + công bằng)/2 – đúng như A1 mục 8(b)', _w8),
+ ('8','C+ cần mẫu ≥ 8 trận: 8 trận → C+; 7 trận → C', lambda: _n8(8)=='C+' and _n8(7)=='C'),
+ ('8','Kết luận có tier cách cũ để so sánh (mục 8)', lambda: (lambda b:(engine.grade(b),b.get('t_old') in('A','B','C+','C'))[1])(bet())),
+ ('9','Chọn Ưu tiên: kèo góc cùng tier, EV kém ≤ 2 điểm → xếp trên kèo bàn', _pri_goc),
+]
 
 def _raises(f):
     try: f(); return False

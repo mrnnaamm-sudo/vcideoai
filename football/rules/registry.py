@@ -7,11 +7,11 @@ MARKETS={'hc':('Chấp bàn FT','chinh_thuc'),'tot':('Tài/Xỉu bàn FT','chinh
          'card':('Thẻ FT','chinh_thuc'),'chc':('Chấp góc FT','chinh_thuc')}
 def official(mk): return MARKETS.get(mk,(None,'cho_tich_hop'))[1]=='chinh_thuc'
 # Mã phiên bản A1 mà bộ máy đang áp (rules/a1_sync.py). Chỉ đổi CÙNG LÚC với quy_chuan.md + A1 các tab.
-A1_VERSION='e8a118b865fc'
+A1_VERSION='7fd416a771fb'
 # Mục 1: giải được lấy vào mẫu 10 trận (VĐQG + C1/EL; ACL với giải châu Á) – KHÔNG cúp quốc nội, giao hữu, Conference League
 MAU_GIAI=('English Premier League','Spanish LALIGA','German Bundesliga','Italian Serie A','French Ligue 1','UEFA Champions League','UEFA Europa League','J1 League','ACL')
 # Mục 0(j): MÃ TỪNG MỤC của A1 mà bộ máy đã cài đúng ý. Sửa/bổ sung mục nào → sửa bộ máy + ca kiểm (rules/kiem_thu.py) của mục đó rồi mới ghim mã mới (python3 rules/a1_sync.py --ma-muc).
-MUC_HASH={"đầu": "cdec39c938ac", "0": "ff14a49cadf7", "1": "041eb27e2e03", "2": "e27ad41f5a68", "3": "d2a2163b7d65", "4": "eb31f57853de", "5": "7e7d5bb8fbdd", "6": "87970b0e64ec", "7": "88a54636765c", "8": "e08386d5cddd", "9": "378f413cce2e", "10": "67a5260315d9", "11": "1ce05d97aac1", "12": "200d821f672a", "13": "07765d7683e0", "14": "d7455f6271d7", "15": "c95c08d3b43d", "16": "cf37705765d5", "17": "d5d60086fa69", "18": "fd7b3209a699", "19": "7e7d6be2a5b5", "20": "c7c4b84d609e", "21": "2c6531a1a9dc", "22": "81e2e0001bfd", "23": "200634f1b072", "24": "0a40c7974de7", "25": "06f00223529f", "26": "38c0101423d3", "27": "5a2e0fc9d366", "28": "c4cbb5e5ae76", "29": "e799394475f8", "30": "6b62412dd08a"}
+MUC_HASH={"đầu": "cdec39c938ac", "0": "ff14a49cadf7", "1": "041eb27e2e03", "2": "e27ad41f5a68", "3": "d2a2163b7d65", "4": "eb31f57853de", "5": "7e7d5bb8fbdd", "6": "87970b0e64ec", "7": "88a54636765c", "8": "9777014347f9", "9": "378f413cce2e", "10": "67a5260315d9", "11": "1ce05d97aac1", "12": "200d821f672a", "13": "07765d7683e0", "14": "d7455f6271d7", "15": "c95c08d3b43d", "16": "cf37705765d5", "17": "d5d60086fa69", "18": "da8ba0477da9", "19": "7e7d6be2a5b5", "20": "c7c4b84d609e", "21": "2c6531a1a9dc", "22": "81e2e0001bfd", "23": "200634f1b072", "24": "0a40c7974de7", "25": "06f00223529f", "26": "38c0101423d3", "27": "5a2e0fc9d366", "28": "c4cbb5e5ae76", "29": "e799394475f8", "30": "6b62412dd08a"}
 ALL=('hc','tot','cor','h1','chc','card')
 RR=('hc','tot','cor','h1','chc')
 REG={

@@ -4,7 +4,7 @@ Thứ tự áp (cố định): mục 6 → mục 8 → mục 5/29 (thẻ) → m�
 Mỗi kèo trả về danh sách bước kiểm (steps) để đối chiếu: mục nào đã áp, kết quả, có đổi tier không."""
 import sys,os
 sys.path.insert(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from model import tier
+from model import tier,tier_old
 from corner_style import verdict_flags
 DOWN={'A':'B','B':'C+','C+':'C','C':'C'}
 ORD={'A':0,'B':1,'C+':2,'C':3}
@@ -112,9 +112,17 @@ def grade(b):
         if b.get('abn') and t!='C': t='C'; notes.insert(0,f"⚠ KÈO BẤT THƯỜNG ({b['abn']})"); uu=False
         return dict(t=t,steps=steps,notes=notes,card_pri=uu)
     t=tier(s,mk)
+    to=tier_old(s,mk) if s['odds'] else 'C'; b['t_old']='C' if to=='B?' else to      # mục 8: tier cách cũ để so sánh ở tổng kết tuần
     if t=='B?':
         t='C'; step('8','đủ "B chờ giá" (mẫu ≥ 65%, mô hình ≥ 58%) – chấm lại khi có giá','C')
     else: step('8',f"tier {t}")
+    # mục 8: lệch thị trường (ước tính − công bằng) > 8 điểm → tối đa C+ (rà soát 28/11: nhóm lệch > 8 điểm 12 kèo ROI −23,8%)
+    if t in('A','B') and s.get('gap') is not None and s['gap']>0.08:
+        t='C+'; step('8',f"lệch thị trường {s['gap']*100:.1f} điểm > 8 → tối đa C+",t)
+        notes.append(f"Mục 8: ước tính lệch thị trường {s['gap']*100:.1f} điểm (> 8) → tối đa C+, không Ưu tiên/TOP")
+    # mục 8: C+ cần mẫu ≥ 8 trận
+    if t=='C+' and (s.get('n') or 10)<8:
+        t='C'; step('8',f"mẫu chỉ {s.get('n')} trận (< 8) → C+ không đạt",t)
     # mục 28: cờ lối đá cho góc FT/H1
     if mk in('cor','h1'):
         v,why=verdict_flags('Tài' if s['side']==0 else 'Xỉu',b.get('flags') or [])
@@ -239,6 +247,10 @@ def rank(matches,slot_of):
     for mid,os_ in matches.items():
         c=[o for o in os_ if o['mk']!='card' and o['t'] in('A','B') and not o.get('abn')]
         c.sort(key=lambda o:(ORD[o['t']],-ev(o)))
+        # mục 9: khi chọn Ưu tiên – kèo góc (góc FT/H1/chấp góc) xếp trên kèo bàn cùng tier nếu EV kém ≤ 2 điểm
+        for k in range(len(c)-1):
+            a_,b_=c[k],c[k+1]
+            if a_['t']==b_['t'] and a_['mk'] not in('cor','h1','chc') and b_['mk'] in('cor','h1','chc') and ev(a_)-ev(b_)<=0.02: c[k],c[k+1]=b_,a_
         for k,o in enumerate(c): o['pri']=k+1 if k<2 else None; o['dp']=k>=2
     slots={}
     for mid,os_ in matches.items():

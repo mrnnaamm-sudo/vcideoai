@@ -170,7 +170,7 @@ def tier(sd,mk,n_ok=True,ref_ok=None,card_dev=None,refdev=None):
         if ea>=0.03 and ev>=0.02 and o>=1.65 and evm>0 and ref_ok and n_ok: return 'C+'
         return 'C'
     same=(pf is None) or ps>pf
-    if ev>=0.10 and evm>=0.10 and gap is not None and gap<=0.12 and same and ea>=0: return 'A'
+    if ev>=0.10 and evm>=0.10 and gap is not None and gap<=0.08 and same and ea>=0: return 'A'
     if ev>=0.05 and evm>0 and same and ea>=0: return 'B'
     if ev>=0.02 and ea>=0.03 and o>=1.65 and evm>0 and n_ok and same: return 'C+'
     return 'C'

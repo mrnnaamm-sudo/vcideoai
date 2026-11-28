@@ -1,18 +1,18 @@
 # BẢNG ĐỐI CHIẾU QUY CHUẨN CHUNG: A1 ↔ BỘ MÁY
-Lập lúc 28/11/2026 07:09 (giờ VN) • Mã phiên bản quy chuẩn: **e8a118b865fc** • Bộ máy ghim: **e8a118b865fc**
+Lập lúc 28/11/2026 10:56 (giờ VN) • Mã phiên bản quy chuẩn: **7fd416a771fb** • Bộ máy ghim: **7fd416a771fb**
 **KẾT LUẬN: ĐỒNG BỘ – A1 và bộ máy giống hệt nhau**
 
 ## 1. A1 trên từng tab
 | Tab | Mã A1 trên tab | So với bộ máy | Toàn văn A1 so với bộ máy |
 |---|---|---|---|
-| Champions League | e8a118b865fc | KHỚP | TRÙNG TỪNG KÝ TỰ |
-| Ngoại hạng Anh | e8a118b865fc | KHỚP | TRÙNG TỪNG KÝ TỰ |
-| La Liga | e8a118b865fc | KHỚP | TRÙNG TỪNG KÝ TỰ |
-| Bundesliga | e8a118b865fc | KHỚP | TRÙNG TỪNG KÝ TỰ |
-| Europa League | e8a118b865fc | KHỚP | TRÙNG TỪNG KÝ TỰ |
-| J1 League | e8a118b865fc | KHỚP | TRÙNG TỪNG KÝ TỰ |
+| Champions League | 7fd416a771fb | KHỚP | TRÙNG TỪNG KÝ TỰ |
+| Ngoại hạng Anh | 7fd416a771fb | KHỚP | TRÙNG TỪNG KÝ TỰ |
+| La Liga | 7fd416a771fb | KHỚP | TRÙNG TỪNG KÝ TỰ |
+| Bundesliga | 7fd416a771fb | KHỚP | TRÙNG TỪNG KÝ TỰ |
+| Europa League | 7fd416a771fb | KHỚP | TRÙNG TỪNG KÝ TỰ |
+| J1 League | 7fd416a771fb | KHỚP | TRÙNG TỪNG KÝ TỰ |
 
-## 2. Ca kiểm ý nghĩa: 92/92 ĐẠT
+## 2. Ca kiểm ý nghĩa: 97/97 ĐẠT
 
 ## 3. Từng mục: mã A1 = mã bộ máy
 | Mục | Nội dung | Mã A1 | Mã bộ máy | Khớp | Bộ máy thực hiện | Ca kiểm |
@@ -26,8 +26,8 @@ Lập lúc 28/11/2026 07:09 (giờ VN) • Mã phiên bản quy chuẩn: **e8a11
 | 5 | Kèo thẻ BẮT BUỘC xét trọng tài và tính chất trận (mục 24) (SIẾT sau RR kỳ 0 | 7e7d5bb8fbdd | 7e7d5bb8fbdd | ✔ | Bộ máy chấm (engine.grade) • bước kiểm '5' • áp cho: Thẻ | 11/11 |
 | 6 | Trước trận | 87970b0e64ec | 87970b0e64ec | ✔ | Bộ máy chấm (engine.grade) • bước kiểm '6' • áp cho: Chấp bàn, Tài/Xỉu bàn, Góc FT, Góc H1, Chấp góc, Thẻ | 1/1 |
 | 7 | Tin lực lượng | 88a54636765c | 88a54636765c | ✔ | Bộ máy chấm (engine.grade) • bước kiểm '27' • áp cho: Chấp bàn, Tài/Xỉu bàn, Góc FT, Góc H1, Chấp góc | 5/5 |
-| 8 | Chấm kèo (BẢN THỬ từ 28/11 – (a)(b), so sánh với cách cũ ở tổng kết tuần 30/11) | e08386d5cddd | e08386d5cddd | ✔ | Bộ máy chấm (engine.grade) • bước kiểm '8' • áp cho: Chấp bàn, Tài/Xỉu bàn, Góc FT, Góc H1, Chấp góc | 15/15 |
-| 9 | Mỗi trận tối đa 2 kèo ưu tiên ('Ưu tiên 1 • …', 'Ưu tiên 2 • …') và CHỈ chọn từ | 378f413cce2e | 378f413cce2e | ✔ | Xếp Ưu tiên/TOP (engine.rank) • engine.rank | 3/3 |
+| 8 | Chấm kèo (BẢN THỬ từ 28/11 – (a)(b), so sánh với cách cũ ở tổng kết tuần 30/11) | 9777014347f9 | 9777014347f9 | ✔ | Bộ máy chấm (engine.grade) • bước kiểm '8' • áp cho: Chấp bàn, Tài/Xỉu bàn, Góc FT, Góc H1, Chấp góc | 19/19 |
+| 9 | Mỗi trận tối đa 2 kèo ưu tiên ('Ưu tiên 1 • …', 'Ưu tiên 2 • …') và CHỈ chọn từ | 378f413cce2e | 378f413cce2e | ✔ | Xếp Ưu tiên/TOP (engine.rank) • engine.rank | 4/4 |
 | 10 | Trình bày thống nhất | 67a5260315d9 | 67a5260315d9 | ✔ | Khuôn ghi sheet • định dạng có điều kiện của tab | 0/0 |
 | 11 | Tái sử dụng dữ liệu đã có trong file trước, chỉ tra web phần mới/thiếu. | 1ce05d97aac1 | 1ce05d97aac1 | ✔ | Khâu nạp dữ liệu (run_day) + kiểm đầu vào (audit) • tái dùng tệp đã tải (g/, d28/fm, j1/fm) | 0/0 |
 | 12 | Cách đếm thẻ | 200d821f672a | 200d821f672a | ✔ | Mô hình xác suất (model.py) • model / recs: thẻ = vàng + 2×đỏ | 0/0 |
@@ -36,7 +36,7 @@ Lập lúc 28/11/2026 07:09 (giờ VN) • Mã phiên bản quy chuẩn: **e8a11
 | 15 | TRẬN KHÔNG ĐỦ SỐ LIỆU | c95c08d3b43d | c95c08d3b43d | ✔ | Bộ máy chấm (engine.grade) • bước kiểm '15' • áp cho: Chấp bàn, Tài/Xỉu bàn, Góc FT, Góc H1, Chấp góc, Thẻ | 3/3 |
 | 16 | KIỂM TRA KÈO BẤT THƯỜNG (bắt buộc trước khi chấm tier) | cf37705765d5 | cf37705765d5 | ✔ | Bộ máy chấm (engine.grade) • bước kiểm '16' • áp cho: Chấp bàn, Tài/Xỉu bàn, Góc FT, Góc H1, Chấp góc, Thẻ | 16/16 |
 | 17 | BỐ CỤC BẮT BUỘC MỖI TAB (mọi giải, mọi ngày, giống hệt tab Champions League) | d5d60086fa69 | d5d60086fa69 | ✔ | Khuôn ghi sheet • khung A5 6 khối | 0/0 |
-| 18 | RR LÀ THƯỚC ĐO HIỆU QUẢ PHÂN TÍCH | fd7b3209a699 | fd7b3209a699 | ✔ | Bộ máy chấm (engine.grade) • bước kiểm '8' • áp cho: Chấp bàn, Tài/Xỉu bàn, Góc FT, Góc H1, Chấp góc • C+ trong model.tier; tổng kết tuần theo lịch | 15/15 |
+| 18 | RR LÀ THƯỚC ĐO HIỆU QUẢ PHÂN TÍCH | da8ba0477da9 | da8ba0477da9 | ✔ | Bộ máy chấm (engine.grade) • bước kiểm '8' • áp cho: Chấp bàn, Tài/Xỉu bàn, Góc FT, Góc H1, Chấp góc • C+ trong model.tier; tổng kết tuần theo lịch | 19/19 |
 | 19 | MÔ HÌNH XÁC SUẤT (mẫu tối đa 10 trận/đội) | 7e7d6be2a5b5 | 7e7d6be2a5b5 | ✔ | Mô hình xác suất (model.py) • model.evaluate, model.chc_eval | 0/0 |
 | 20 | SÂN NHÀ / SÂN KHÁCH (bắt buộc tách) | c7c4b84d609e | c7c4b84d609e | ✔ | Bộ máy chấm (engine.grade) • bước kiểm '20(d)' • áp cho: Chấp bàn • (a)(b) trong model.vblend | 4/4 |
 | 21 | HỆ SỐ GIẢI (thông số PHỤ, chỉ dùng khi hai đội khác giải – cúp châu Âu) | 2c6531a1a9dc | 2c6531a1a9dc | ✔ | Mô hình xác suất (model.py) • model.evaluate tham số coef (trận khác giải) | 0/0 |
@@ -145,29 +145,33 @@ QUY CHUẨN CHUNG – ÁP DỤNG GIỐNG NHAU CHO MỌI TAB BÓNG ĐÁ (trừ ta
 - ✔ ĐẠT — Hai nguồn đội hình lệch (⚠) → chưa hạ
 - ✔ ĐẠT — Biên: chỉ số đội hình 0,90 → hạ; 0,91 → không
 
-### Mục 8 — ✔ khớp (mã e08386d5cddd)
+### Mục 8 — ✔ khớp (mã 9777014347f9)
 **A1:**
 
-8. Chấm kèo (BẢN THỬ từ 28/11 – (a)(b), so sánh với cách cũ ở tổng kết tuần 30/11): (a) mẫu = tỷ lệ đạt trong 10 trận hai đội (gộp, tính hoàn/thắng-thua nửa); MẪU CO VỀ THỊ TRƯỜNG = (mẫu + xác suất công bằng nhà cái)/2 trước khi tính EV và lợi thế; hòa vốn = 1/odds (giá người dùng nếu có). (b) Xác suất mô hình theo mục 19. Xác suất công bằng = (1/odds cửa chọn) ÷ (1/odds cửa chọn + 1/odds cửa kia). Xác suất ước tính = 40% mô hình + 30% mẫu đã co + 30% công bằng (thiếu giá cửa kia: 55% mô hình + 45% mẫu); EV% = xác suất ước tính × odds − 1. Tier A: EV ≥ 10%, EV mô hình ≥ 10%, lệch so với thị trường (ước tính − công bằng) ≤ 12 điểm %, mẫu thô nghiêng hơn thị trường, mẫu đã co ≥ hòa vốn, tin tức/trọng tài không phản bác. Kèo lệch thị trường > 12 điểm tối đa B trừ khi tin lực lượng giải thích được. Tier B: EV ≥ 5%, EV mô hình > 0, mẫu thô nghiêng hơn thị trường, mẫu đã co ≥ hòa vốn. C+ (mục 18b): EV ≥ 2%, mẫu đã co ≥ hòa vốn +3 điểm, odds ≥ 1,65, mô hình cùng chiều, mẫu ≥ 8. Mô hình NGƯỢC CHIỀU → tối đa C. Kèo thẻ vẫn theo mục 5. Chờ giá: kèo chưa có giá thật luôn tier C (không vào); nếu mẫu ≥ 65% và mô hình ≥ 58% thì ghi 'đủ B chờ giá' để chấm lại ngay khi có giá. Kết luận ghi 'mẫu x% / hòa vốn y% • EV +z% (mô hình w%) • kỳ vọng …' và '[Thử mục 8 (a)(b); tier cách cũ: …]'. Cách cũ (để so sánh): A = mẫu ≥ hòa vốn +25 điểm & EV ≥ 12%; B = mẫu ≥ hòa vốn +9 điểm, mẫu ≥ 55%, EV ≥ 5%.
+8. Chấm kèo (BẢN THỬ từ 28/11 – (a)(b), so sánh với cách cũ ở tổng kết tuần 30/11): (a) mẫu = tỷ lệ đạt trong 10 trận hai đội (gộp, tính hoàn/thắng-thua nửa); MẪU CO VỀ THỊ TRƯỜNG = (mẫu + xác suất công bằng nhà cái)/2 trước khi tính EV và lợi thế; hòa vốn = 1/odds (giá người dùng nếu có). (b) Xác suất mô hình theo mục 19. Xác suất công bằng = (1/odds cửa chọn) ÷ (1/odds cửa chọn + 1/odds cửa kia). Xác suất ước tính = 40% mô hình + 30% mẫu đã co + 30% công bằng (thiếu giá cửa kia: 55% mô hình + 45% mẫu); EV% = xác suất ước tính × odds − 1. Tier A: EV ≥ 10%, EV mô hình ≥ 10%, lệch so với thị trường (ước tính − công bằng) ≤ 8 điểm %, mẫu thô nghiêng hơn thị trường, mẫu đã co ≥ hòa vốn, tin tức/trọng tài không phản bác. Kèo đạt A/B mà lệch thị trường > 8 điểm → tối đa C+, không Ưu tiên/TOP (rà soát 28/11: nhóm lệch > 8 điểm 12 kèo ROI −23,8%, dự báo thắng 63% – thực tế 40%). Tier B: EV ≥ 5%, EV mô hình > 0, mẫu thô nghiêng hơn thị trường, mẫu đã co ≥ hòa vốn. C+ (mục 18b): EV ≥ 2%, mẫu đã co ≥ hòa vốn +3 điểm, odds ≥ 1,65, mô hình cùng chiều, mẫu ≥ 8 trận (dưới 8 → C). Mô hình NGƯỢC CHIỀU → tối đa C. Kèo thẻ vẫn theo mục 5. Chờ giá: kèo chưa có giá thật luôn tier C (không vào); nếu mẫu ≥ 65% và mô hình ≥ 58% thì ghi 'đủ B chờ giá' để chấm lại ngay khi có giá. Kết luận ghi 'mẫu x% / hòa vốn y% • EV +z% (mô hình w%) • kỳ vọng …' và '[Thử mục 8 (a)(b); tier cách cũ: …]'. Cách cũ (để so sánh): A = mẫu ≥ hòa vốn +25 điểm & EV ≥ 12%; B = mẫu ≥ hòa vốn +9 điểm, mẫu ≥ 55%, EV ≥ 5%.
 
 **Bộ máy:** Bộ máy chấm (engine.grade) • bước kiểm '8' • áp cho: Chấp bàn, Tài/Xỉu bàn, Góc FT, Góc H1, Chấp góc
 
 **Ca kiểm ý nghĩa (theo A1 thì phải ra):**
 - ✔ ĐẠT — Kèo chuẩn đủ điều kiện (EV ≥ 10%, EV mô hình ≥ 10%, lệch thị trường ≤ 12, mẫu nghiêng hơn thị trường) → A
 - ✔ ĐẠT — EV 6% (≥ 5%), mô hình > 0 → B
-- ✔ ĐẠT — Lệch thị trường > 12 điểm → tối đa B
+- ✔ ĐẠT — Lệch thị trường > 8 điểm → tối đa C+ (rà soát 28/11)
 - ✔ ĐẠT — Mẫu thô KHÔNG nghiêng hơn thị trường → không A/B
 - ✔ ĐẠT — Mô hình ngược chiều (EV mô hình < 0) → tối đa C
 - ✔ ĐẠT — C+: EV 3%, mẫu co ≥ hòa vốn +3, odds ≥ 1,65, mô hình cùng chiều → C+
 - ✔ ĐẠT — Chưa có giá thật → luôn C (đủ B ghi "B chờ giá")
 - ✔ ĐẠT — Biên A: EV 10,01% → A; EV 9,99% → B
 - ✔ ĐẠT — Biên A: EV mô hình 10,01% → A; 9,99% → B
-- ✔ ĐẠT — Biên A: lệch thị trường 11,99 điểm → A; 12,01 → B
+- ✔ ĐẠT — Biên lệch thị trường: 7,99 điểm → giữ A; 8,01 điểm → C+
+- ✔ ĐẠT — Biên lệch thị trường ở tier B: 8,01 điểm → C+; 7,99 → B
 - ✔ ĐẠT — Biên B: EV 5,01% → B; 4,99% → C+
 - ✔ ĐẠT — Biên C+: odds 1,65 → C+; 1,64 → C
 - ✔ ĐẠT — Biên C+: mẫu co ≥ hòa vốn + 3 điểm → C+; + 2 điểm → C
 - ✔ ĐẠT — Biên "B chờ giá": mẫu 65% + mô hình 58% → ghi đủ B chờ giá; 64,9% hoặc 57,9% → không
 - ✔ ĐẠT — Biên C+: EV 2,01% → C+; 1,99% → C
+- ✔ ĐẠT — Trọng số ước tính 40/30/30 (thiếu giá cửa kia 55/45) và mẫu đã co = (mẫu + công bằng)/2 – đúng như A1 mục 8(b)
+- ✔ ĐẠT — C+ cần mẫu ≥ 8 trận: 8 trận → C+; 7 trận → C
+- ✔ ĐẠT — Kết luận có tier cách cũ để so sánh (mục 8)
 
 ### Mục 9 — ✔ khớp (mã 378f413cce2e)
 **A1:**
@@ -180,6 +184,7 @@ QUY CHUẨN CHUNG – ÁP DỤNG GIỐNG NHAU CHO MỌI TAB BÓNG ĐÁ (trừ ta
 - ✔ ĐẠT — Mỗi trận tối đa 2 Ưu tiên, chỉ tier A/B
 - ✔ ĐẠT — Cùng tier, EV kém ≤ 2 điểm → kèo góc xếp TOP trên kèo bàn
 - ✔ ĐẠT — Cửa có nguy cơ xoay tua không làm TOP
+- ✔ ĐẠT — Chọn Ưu tiên: kèo góc cùng tier, EV kém ≤ 2 điểm → xếp trên kèo bàn
 
 ### Mục 10 — ✔ khớp (mã 67a5260315d9)
 **A1:**
@@ -276,29 +281,33 @@ QUY CHUẨN CHUNG – ÁP DỤNG GIỐNG NHAU CHO MỌI TAB BÓNG ĐÁ (trừ ta
 
 **Bộ máy:** Khuôn ghi sheet • khung A5 6 khối
 
-### Mục 18 — ✔ khớp (mã fd7b3209a699)
+### Mục 18 — ✔ khớp (mã da8ba0477da9)
 **A1:**
 
-18. RR LÀ THƯỚC ĐO HIỆU QUẢ PHÂN TÍCH: RR cao trên mọi nhóm kèo = cách phân tích đang tốt; RR thấp/âm = BẮT BUỘC lập đề xuất đổi cách phân tích và báo người dùng; chỉ đổi khi người dùng duyệt (mục 0k(2)). (a) TỔNG KẾT TUẦN: mỗi tuần 1 lần gộp RR của cả 5 tab bóng đá (theo giải, theo nhóm TOP/Ưu tiên/Tier A/B/C, theo thị trường chấp/bàn/góc FT/góc H1, theo lý do chọn; kèo thẻ tổng kết RIÊNG theo mục 29), ghi vào tab 'Tổng kết RR tuần', đề xuất bài học và chỉnh ngưỡng/quy tắc (CHỜ DUYỆT, mục 0k) nếu nhóm nào RR âm 2 tuần liên tiếp. (b) NÂNG RR TIER C cho CẢ 5 TAB BÓNG ĐÁ (không chỉ khuyên bỏ): số liệu đầu tiên đã có kết quả (C1 25–26/11; Europa, Ngoại hạng Anh, La Liga, Bundesliga cộng dồn ngay khi có kết quả) – Tier C 25T–28B = −7,67R (thẻ −3,24; bàn −1,67; góc FT −1,32; góc H1 −1,10; chấp −0,34; lý do 'không lợi thế' −2,64, 'mẫu mỏng' −2,18, 'trọng tài ngược' −1,50) vì kèo C chỉ nhỉnh hòa vốn nên ra kết quả như tung đồng xu. Cách nâng: (1) TÌM MỐC TỐI ƯU: với mỗi kèo C, thử các mốc/cửa thay thế (mốc ¼, mốc ±1, cửa ngược, chấp châu Á thay 1X2) và chọn mốc có lợi thế lớn nhất so với giá – chỉ giữ nếu lợi thế ≥ +5 điểm; (2) ĐỐI CHIẾU KÉP: mẫu tỷ lệ + kỳ vọng công–thủ (mục 16e) + trọng tài (kèo thẻ) phải CÙNG CHIỀU mới được xét C+; lệch chiều thì loại hẳn, không để C tham khảo; (3) LOẠI GIÁ THẤP: không chọn cửa C có odds < 1,65 (biên nhà cái nuốt hết lợi thế); (4) MẪU ĐỦ: kèo C do mẫu mỏng chỉ xét lại khi đã bù đủ ≥ 8 trận; (5) PHÂN HẠNG C+ / C: C+ = lợi thế +5 đến +9 điểm, đủ (2)(3)(4), ghi 'C+ • ½R' trong kết luận (khuyến nghị nửa vốn); C còn lại ghi 'C • không vào'. Bảng RR tính riêng C+ và C để theo dõi; nếu C+ RR dương 2 tuần liên tiếp thì đề xuất nâng ngưỡng B xuống tương ứng, nếu âm thì đề xuất siết điều kiện C+ (chờ duyệt, mục 0k). (c) Thay đổi cách phân tích do RR tuần chỉ áp sau khi người dùng duyệt; khi đó ghi rõ vào mục 14 và áp cho mọi tab kèo bóng đá theo mục 0(j).
+18. RR LÀ THƯỚC ĐO HIỆU QUẢ PHÂN TÍCH: RR cao trên mọi nhóm kèo = cách phân tích đang tốt; RR thấp/âm = BẮT BUỘC lập đề xuất đổi cách phân tích và báo người dùng; chỉ đổi khi người dùng duyệt (mục 0k(2)). (a) TỔNG KẾT TUẦN: mỗi tuần 1 lần gộp RR của mọi tab kèo bóng đá (theo giải, theo nhóm TOP/Ưu tiên/Tier A/B/C, theo thị trường chấp/bàn/góc FT/góc H1, theo lý do chọn; kèo thẻ tổng kết RIÊNG theo mục 29), ghi vào tab 'Tổng kết RR tuần', đề xuất bài học và chỉnh ngưỡng/quy tắc (CHỜ DUYỆT, mục 0k) nếu nhóm nào RR âm 2 tuần liên tiếp. (b) NÂNG RR TIER C cho MỌI TAB KÈO BÓNG ĐÁ (không chỉ khuyên bỏ): số liệu đầu tiên đã có kết quả (C1 25–26/11; Europa, Ngoại hạng Anh, La Liga, Bundesliga cộng dồn ngay khi có kết quả) – Tier C 25T–28B = −7,67R (thẻ −3,24; bàn −1,67; góc FT −1,32; góc H1 −1,10; chấp −0,34; lý do 'không lợi thế' −2,64, 'mẫu mỏng' −2,18, 'trọng tài ngược' −1,50) vì kèo C chỉ nhỉnh hòa vốn nên ra kết quả như tung đồng xu. Cách nâng: (1) TÌM MỐC TỐI ƯU: với mỗi kèo C, thử các mốc/cửa thay thế (mốc ¼, mốc ±1, cửa ngược, chấp châu Á thay 1X2) và chọn mốc có lợi thế lớn nhất so với giá – chỉ giữ nếu lợi thế ≥ +5 điểm; (2) ĐỐI CHIẾU KÉP: mẫu tỷ lệ + kỳ vọng công–thủ (mục 16e) + trọng tài (kèo thẻ) phải CÙNG CHIỀU mới được xét C+; lệch chiều thì loại hẳn, không để C tham khảo; (3) LOẠI GIÁ THẤP: không chọn cửa C có odds < 1,65 (biên nhà cái nuốt hết lợi thế); (4) MẪU ĐỦ: kèo C do mẫu mỏng chỉ xét lại khi đã bù đủ ≥ 8 trận; (5) PHÂN HẠNG C+ / C: C+ = lợi thế +5 đến +9 điểm, đủ (2)(3)(4), ghi 'C+ • ½R' trong kết luận (khuyến nghị nửa vốn); C còn lại ghi 'C • không vào'. Bảng RR tính riêng C+ và C để theo dõi; nếu C+ RR dương 2 tuần liên tiếp thì đề xuất nâng ngưỡng B xuống tương ứng, nếu âm thì đề xuất siết điều kiện C+ (chờ duyệt, mục 0k). (c) Thay đổi cách phân tích do RR tuần chỉ áp sau khi người dùng duyệt; khi đó ghi rõ vào mục 14 và áp cho mọi tab kèo bóng đá theo mục 0(j).
 
 **Bộ máy:** Bộ máy chấm (engine.grade) • bước kiểm '8' • áp cho: Chấp bàn, Tài/Xỉu bàn, Góc FT, Góc H1, Chấp góc • C+ trong model.tier; tổng kết tuần theo lịch
 
 **Ca kiểm ý nghĩa (theo A1 thì phải ra):**
 - ✔ ĐẠT — Kèo chuẩn đủ điều kiện (EV ≥ 10%, EV mô hình ≥ 10%, lệch thị trường ≤ 12, mẫu nghiêng hơn thị trường) → A
 - ✔ ĐẠT — EV 6% (≥ 5%), mô hình > 0 → B
-- ✔ ĐẠT — Lệch thị trường > 12 điểm → tối đa B
+- ✔ ĐẠT — Lệch thị trường > 8 điểm → tối đa C+ (rà soát 28/11)
 - ✔ ĐẠT — Mẫu thô KHÔNG nghiêng hơn thị trường → không A/B
 - ✔ ĐẠT — Mô hình ngược chiều (EV mô hình < 0) → tối đa C
 - ✔ ĐẠT — C+: EV 3%, mẫu co ≥ hòa vốn +3, odds ≥ 1,65, mô hình cùng chiều → C+
 - ✔ ĐẠT — Chưa có giá thật → luôn C (đủ B ghi "B chờ giá")
 - ✔ ĐẠT — Biên A: EV 10,01% → A; EV 9,99% → B
 - ✔ ĐẠT — Biên A: EV mô hình 10,01% → A; 9,99% → B
-- ✔ ĐẠT — Biên A: lệch thị trường 11,99 điểm → A; 12,01 → B
+- ✔ ĐẠT — Biên lệch thị trường: 7,99 điểm → giữ A; 8,01 điểm → C+
+- ✔ ĐẠT — Biên lệch thị trường ở tier B: 8,01 điểm → C+; 7,99 → B
 - ✔ ĐẠT — Biên B: EV 5,01% → B; 4,99% → C+
 - ✔ ĐẠT — Biên C+: odds 1,65 → C+; 1,64 → C
 - ✔ ĐẠT — Biên C+: mẫu co ≥ hòa vốn + 3 điểm → C+; + 2 điểm → C
 - ✔ ĐẠT — Biên "B chờ giá": mẫu 65% + mô hình 58% → ghi đủ B chờ giá; 64,9% hoặc 57,9% → không
 - ✔ ĐẠT — Biên C+: EV 2,01% → C+; 1,99% → C
+- ✔ ĐẠT — Trọng số ước tính 40/30/30 (thiếu giá cửa kia 55/45) và mẫu đã co = (mẫu + công bằng)/2 – đúng như A1 mục 8(b)
+- ✔ ĐẠT — C+ cần mẫu ≥ 8 trận: 8 trận → C+; 7 trận → C
+- ✔ ĐẠT — Kết luận có tier cách cũ để so sánh (mục 8)
 
 ### Mục 19 — ✔ khớp (mã 7e7d6be2a5b5)
 **A1:**
