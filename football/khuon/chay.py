@@ -110,7 +110,7 @@ for b in BETS:
     if not REG.official(b['mk']): b.update(t='—',steps=[('0(h)','chờ tích hợp',None)],notes=[]); MATCH[b['mid']].append(b); continue
     b.update(grade(b)); MATCH[b['mid']].append(b)
 rank(MATCH,SLOT)
-SRC='FotMob 10 trận gần nhất (VĐQG + C1/EL/ACL) • Pinnacle (Odds API) cho chấp/tài xỉu bàn • giá góc/thẻ/chấp góc: người dùng • ClubElo / Elo ước tính từ BXH • FotMob (đội hình, lối đá, trọng tài)'
+SRC='FotMob 10 trận gần nhất (VĐQG + C1/EL/ACL) • '+os.environ.get('KHUON_GIA_NGUON','Pinnacle (Odds API)')+' cho chấp/tài xỉu bàn • giá góc/thẻ/chấp góc: người dùng • ClubElo / Elo ước tính từ BXH • FotMob (đội hình, lối đá, trọng tài)'
 PAY=payload(MATCH,SER,SRC)
 out=[dict(tab=b['tab'],row=b['row'],mid=b['mid'],mk=b['mk'],time=b['time'],lab=b['lab'],side=b['s']['side'],line=b['x']['line'],odds=b['s']['odds'],
           ps=b['s']['ps'],psa=b['s']['psa'],pm=b['s']['pm'],pf=b['s']['pf'],ev=b['s']['ev'],evm=b['s']['evm'],t=b['t'],steps=b['steps'],notes=b['notes'],
